@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>우리동네 테니스</title>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+  <link rel="stylesheet" href="/udt_project/test/css/main.css">
+  <link rel="stylesheet" href="/udt_project/test/css/myPage.css">
+  <link rel="stylesheet" media="all and (max-width: 1199px)" href="/udt_project/test/css/myPage_t.css">
+  <link rel="stylesheet" media="all and (max-width: 766px)" href="/udt_project/test/css/myPage_m.css">
+</head>
+
+<body>
+  <header>
+    <div class="topBanner">회원가입하고 즉시 20% 레슨 할인쿠폰 받기!</div>
+    <nav class="topNav">
+      <div class="logoCatWrapper">
+        <div class="logo">우리동네 테니스</div>
+        <div class="catMenu">
+          <a href="local_loginAfter.html">테니스 예약</a>
+          <a href="#">커뮤니티</a>
+          <a href="#">비즈니스</a>
+        </div>
+      </div>
+      <div class="userMenu">
+        <!-- <a href="#">로그인</a> -->
+        <!-- <a href="#">회원가입</a> -->
+        <a href="#">마이페이지</a>
+      </div>
+    </nav>
+    <nav class="bottomNav">
+      <a href="#"><iconify-icon icon="material-symbols-light:local-cafe-outline"></iconify-icon>커뮤니티</a>
+      <a href="local.html"><iconify-icon icon="material-symbols-light:calendar-month-outline"></iconify-icon>예약</a>
+      <a href="#"><iconify-icon icon="material-symbols-light:home-outline"></iconify-icon>홈</a>
+      <a href="#"><iconify-icon icon="circum:heart"></iconify-icon>찜</a>
+      <a href="login.html"><iconify-icon icon="fluent:person-20-regular"></iconify-icon>로그인</a>
+    </nav>
+  </header>
+  <section class="myPage">
+    <div class="mainSection">
+      <div class="left">
+        <div class="customInfo">
+          <img src="/udt_project/test/img/myPageImg.jpeg" alt="마이페이지사진">
+          <img src="/udt_project/test/img/mdi_edit-circle.png" alt="수정하기 버튼">
+          <div><span class="cName">장기성</span>회원님</div>
+        </div>
+        <!-- 원본 처음-->
+        <div class="mypageMenu">
+          <div class="mySec">
+            <div>MY</div>
+            <div>내 정보 관리</div>
+            <div>채팅 관리</div>
+            <div>찜 강사 목록</div>
+            <div>고객센터 문의</div>
+          </div>
+          <div class="paymentSec">
+            <div>PAYMENT</div>
+            <div>결제 내역</div>
+            <div>결제 수단</div>
+          </div>
+          <button>로그아웃</button>
+        </div>
+        <!-- 원본 끝 -->
+        <div class="selectCont">
+        <article class="cont-select">
+          <button class="btn-select">My</button>
+          <ul class="list-member">
+            <li><button type="button">내 정보 관리</button></li>
+            <li><button type="button">채팅 관리</button></li>
+            <li><button type="button">찜 강사 목록</button></li>
+            <li><button class="rdBt" type="button">고객센터 문의</button></li>
+          </ul>
+        </article>
+        <article class="cont-select">
+          <button class="btn-select">Payment</button>
+          <ul class="list-member">
+            <li><button type="button">결제 내역</button></li>
+            <li><button class="rdBt" type="button">결제 수단</button></li>
+          </ul>
+        </article>
+      </div>
+      </div>
+      <div class="right">
+        <div class="myAct">
+          <div class="myAct_div">나의 활동</div>
+          <div class="myActBox">
+            <div class="conBox">
+              <div class="boxText">진행중인 상담</div>
+              <div class="boxNumber">0</div>
+            </div>
+            <div class="conBox">
+              <div class="boxText">결제 완료</div>
+              <div class="boxNumber">0</div>
+            </div>
+            <div class="conBox">
+              <div class="boxText">찜한 강사</div>
+              <div class="boxNumber">0</div>
+            </div>
+          </div>
+          <div class="conBox02">
+            <div class="boxText02">사용가능한 쿠폰</div>
+            <div class="boxNumber02">3장</div>
+          </div>
+          <div class="conBox02">
+            <div class="boxText02">등록한 후기</div>
+            <div class="boxNumber02">0건</div>
+          </div>
+          <div class="eventBox">
+            <div class="eventTxt">친구 초대하고<br>10% 추가 할인 쿠폰 받자!</div>
+            <div class="eventCp"><img src="/udt_project/test/img/mdi_coupon.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="serviceSec">
+      <a href="#">이용약관</a>
+      <a href="#" class="personal">개인정보처리방침</a>
+    </div>
+    <div class="contact">
+      <div>Contact</div>
+      <div>010-0000-0000</div>
+      <div>https://github.com/udtennis/udt_project</div>
+    </div>
+    <div class="copyright">
+      <div>&copy; 미정이네</div>
+      <div>대표 : 이승빈</div>
+      <div>공동대표 : 박강민 장기성 권윤지 유혜인</div>
+    </div>
+  </footer>
+  <script src="/udt_project/test/js/Mypage_M.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
+</body>
+
+</html>

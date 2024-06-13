@@ -1,0 +1,200 @@
+@charset "UTF-8";
+/* 지역 선택페이지 CSS */
+.mainLocal{
+  display: flex;
+}
+.selectArea {
+  display: flex;
+  padding: 30px 20px;
+  gap: 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.20);
+}
+.reservation {
+  width: 450px;
+  padding: 20px;
+  gap: 32px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.30);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.choice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.choice .lesson,
+.choice .court {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 22px;
+  font-weight: 800;
+  font-family: pretender variable;
+}
+.choice .lesson {
+  border-bottom: 2px solid #d3f131;
+}
+.choicePlace {
+  display: flex;
+  padding: 10px 40px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.30);
+}
+.choicePlace>div {
+  font-weight: bolder;
+}
+/* 동네선택하기 */
+.cont-select {
+  position: relative;
+  width: 170px;
+}
+.btn-select {
+  width: 100%;
+  padding: 13px 30px 13px 14px;
+  font-size: 16px;
+  line-height: 14px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-bottom-color: #818181;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  position: relative;
+}
+.btn-select+img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transform: rotate(0);
+  transition: 0.3s;
+}
+.btn-select.on+img {
+  transform: rotate(3.142rad);
+}
+.list-member {
+  list-style-type: none;
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding: 0;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 10px 10px;
+  background: #fff;
+  animation-name: dropdown;
+  animation-duration: 500ms;
+  animation-direction: normal;
+}
+.btn-select.on~.list-member {
+  display: block;
+}
+.list-member li {
+  width: 100%;
+  box-sizing: border-box;
+}
+.list-member li button {
+  width: 100%;
+  padding: 7px 10px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.rdBt {
+  border-radius: 0 0 8px 8px;
+}
+.list-member li button:hover,
+.list-member li button:focus {
+  background-color: #9a9a9a;
+  color: #fff;
+}
+.c_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 37px;
+}
+.cList {
+  font-size: 20px;
+  font-weight: bold;
+}
+.cL {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 500px;
+  overflow-y: scroll;
+  padding-right: 7px;
+}
+.cL::-webkit-scrollbar {
+  width: 7px;
+}
+.cL::-webkit-scrollbar-thumb {
+  height: 30%;
+  background: #e3fa5c;
+  border-radius: 10px;
+}
+.cL::-webkit-scrollbar-track {
+  background: rgba(33, 122, 244, .1);
+  border-radius: 10px;
+}
+.coachList {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  padding: 10px 20px;
+  gap: 6px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.40);
+}
+.coachList span {
+  font-size: 20px;
+  font-weight: bold;
+}
+.coachList .career {
+  position: relative;
+  color: #3b3b3b;
+  font-weight: bold;
+}
+.coachList .pay {
+  font-size: 12px;
+}
+.coachList .text,
+.pay {
+  color: #535353;
+}
+.coachList .badge {
+  display: flex;
+  padding: 5px 10px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font-size: 12px;
+  border-radius: 10px;
+  background-color: #e3fa5c;
+}
+.bottomNav{
+  display: none;
+}
+footer { 
+  gap: 15px;
+}
+footer .contact {
+  display: none;
+  gap: 15px;
+  color: #fff;
+}

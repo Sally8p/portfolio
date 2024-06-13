@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/* 우동테 main tab css */
+.cont-select{
+  display: none;
+}
+.topNav .catMenu,
+.topNav .userMenu {
+  display: none;
+}
+.topNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .logo {
+  margin-left: 40px;
+}
+.bottomNav {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  padding: 13px 50px;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  z-index: 20;
+}
+.bottomNav a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-size: 16px;
+}
+.bottomNav a:nth-of-type(3) {
+  color: #8530ff;
+}
+.bottomNav a:hover {
+  color: #8530ff;
+}
+iconify-icon {
+  font-size: 30px;
+}
+footer {
+  display: flex;
+  margin-bottom: 60px;
+  background-color: #F0F0F0;
+}
+footer .serviceSec a {
+  color: #000;
+}
+footer .serviceSec .personal {
+  color: #8530ff;
+}
+footer .contact {
+  color: #000;
+}
+footer .copyright {
+  color: #000;
+}
+header .topBanner{
+  display: none;
+}
+.mainSection{
+  gap: 100px;
+}
+.right{
+  width: 350px;
+}
+.boxText,
+.boxNumber {
+  font-size: 15px;
+  font-weight: 600;
+}
+.myPage{
+  margin: 0;
+}
+.boxText02,
+.boxNumber02 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.mySec>div{
+  font-size: 10px;
+}
+
+.mySec>div,
+.paymentSec>div {
+  font-size: 25px;
+}

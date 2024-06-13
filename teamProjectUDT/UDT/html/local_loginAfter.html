@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>우리동네 테니스</title>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+  <link rel="stylesheet" href="/udt_project/test/css/main.css">
+  <link rel="stylesheet" href="/udt_project/test/css/map.css">
+  <link rel="stylesheet" href="/udt_project/test/css/local.css">
+  <link rel="stylesheet" media="all and (max-width: 1199px)" href="/udt_project/test/css/local_t.css">
+  <link rel="stylesheet" media="all and (max-width: 766px)" href="/udt_project/test/css/local_m.css">
+</head>
+
+<body>
+  <header>
+    <div class="topBanner">회원가입하고 즉시 20% 레슨 할인쿠폰 받기!</div>
+    <nav class="topNav">
+      <div class="logoCatWrapper">
+        <div class="logo">우리동네 테니스</div>
+        <div class="catMenu">
+          <a href="#">테니스 예약</a>
+          <a href="#">커뮤니티</a>
+          <a href="#">비즈니스</a>
+        </div>
+      </div>
+      <div class="userMenu">
+        <!-- <a href="#">로그인</a>
+        <a href="#">회원가입</a> -->
+        <a href="Mypage.html">마이페이지</a>
+      </div>
+    </nav>
+    <nav class="bottomNav">
+      <a href="#"><iconify-icon icon="material-symbols-light:local-cafe-outline"></iconify-icon>커뮤니티</a>
+      <a href="local.html"><iconify-icon icon="material-symbols-light:calendar-month-outline"></iconify-icon>예약</a>
+      <a href="#"><iconify-icon icon="material-symbols-light:home-outline"></iconify-icon>홈</a>
+      <a href="#"><iconify-icon icon="circum:heart"></iconify-icon>찜</a>
+      <a href="login.html"><iconify-icon icon="fluent:person-20-regular"></iconify-icon>로그인</a>
+      <!-- <a href="#" id="dropdownTrigger"><iconify-icon icon="material-symbols-arrow-drop-up"></iconify-icon>메뉴</a>  -->
+    </nav>
+  </header>
+  <div class="mainLocal">
+    <div class="selectArea">
+      <div class="reservation">
+        <div class="choice">
+          <div class="lesson" id="dropdownTrigger">레슨 예약</div>
+          <div class="court">코트 예약</div>
+        </div>
+        <div class="choicePlace">
+          <div>우리동네 선택하기</div>
+          <article class="cont-select">
+            <button class="btn-select">청주시</button><img src="/udt_project/test/img/dropdown.png" alt="드롭다운">
+            <ul class="list-member">
+              <li><button type="button">청주시 상당구</button></li>
+              <li><button type="button">청주시 청원구</button></li>
+              <li><button type="button">청주시 서원구</button></li>
+              <li><button class="rdBt" type="button">청주시 흥덕구</button></li>
+            </ul>
+          </article>
+        </div>
+        <div class="c_list">
+          <div class="cList">강사 리스트</div>
+          <div class="cL">
+            <div class="coachList">
+              <div class="career"><span>박강민 (남) · </span>경력 2년</div>
+              <div class="text">테니스 경력 2년 코치의 레슨</div>
+              <div class="pay">최초 1회 5만원</div>
+            </div>
+            <div class="coachList">
+              <div class="career"><span>이승빈 (남) · </span>경력 5년<span class="badge">프로</span></div>
+              <div class="text">테니스 경력 5년 코치의 레슨</div>
+              <div class="pay">최초 1회 5만원</div>
+            </div>
+            <div class="coachList">
+              <div class="career"><span>박윤성 (남) · </span>경력 2년</div>
+              <div class="text">테니스 경력 2년 코치의 레슨</div>
+              <div class="pay">최초 1회 5만원</div>
+            </div>
+            <div class="coachList">
+              <div class="career"><span>권윤지 (여) · </span>경력 5년<span class="badge">프로</span></div>
+              <div class="text">테니스 경력 5년 코치의 레슨</div>
+              <div class="pay">최초 1회 5만원</div>
+            </div>
+            <div class="coachList">
+              <div class="career"><span>장기성 (남) · </span>경력 5년<span class="badge">프로</span></div>
+              <div class="text">테니스 경력 5년 코치의 레슨</div>
+              <div class="pay">최초 1회 5만원</div>
+            </div>
+            <div class="coachList">
+              <div class="career"><span>유혜인 (여) · </span>경력 5년<span class="badge">프로</span></div>
+              <div class="text">테니스 경력 5년 코치의 레슨</div>
+              <div class="pay">최초 1회 5만원</div>
+            </div>
+            <div class="coachList">
+              <div class="career"><span>김이지 (남) · </span>경력 5년<span class="badge">프로</span></div>
+              <div class="text">테니스 경력 5년 코치의 레슨</div>
+              <div class="pay">최초 1회 5만원</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
+  </div>
+  <footer>
+    <div class="serviceSec">
+      <a href="#">이용약관</a>
+      <a href="#" class="personal">개인정보처리방침</a>
+    </div>
+    <div class="contact">
+      <div>Contact</div>
+      <div>010-0000-0000</div>
+      <div>https://github.com/udtennis/udt_project</div>
+    </div>
+    <div class="copyright">
+      <div>&copy; 미정이네</div>
+      <div>대표 : 이승빈</div>
+      <div>공동대표 : 박강민 장기성 권윤지 유혜인</div>
+    </div>
+  </footer>
+  <script src="/udt_project/test/js/local.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
+  <!-- api 맵 구현 script -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <!-- <script src="/udt_project/test/js/supabaseMapScript.js"></script> -->
+  <script src="/udt_project/test/js/mapCustomTest3.js"></script>
+  <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8fa566ae5d765eb1a068de2fe2240a95"></script>
+</body>
+
+</html>
