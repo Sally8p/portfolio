@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 | 우리동네 테니스</title>
+    <script src="https://kit.fontawesome.com/650017f151.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/udt_project/test/css/signin.css">
+</head>
+
+<body>
+    <div class="signinContainer">
+        <div class="signinTitle">
+            <h2>회원가입</h2>
+            <p>회원이 되어 다양한 혜택을 누려 보세요!</p>
+        </div>
+        <form action="#" method="post">
+            <div class="idSec">
+                <label for="userId">아이디</label>
+                <input type="text" id="userId" name="userId" placeholder="아이디를 입력하세요 (6~20자)" required>
+                <button>중복 확인</button>
+            </div>
+            <div>
+                <label for="userPass">비밀번호</label>
+                <input type="password" id="userPass" name="userPass" placeholder="비밀번호를 입력하세요 (문자, 숫자, 특수문자 포함 8~20자)"
+                    required>
+            </div>
+            <div>
+                <label for="userPassCheck">비밀번호 확인</label>
+                <input type="password" id="userPassCheck" name="userPassCheck" placeholder="비밀번호 재입력" required>
+                <div id="passError"></div>
+            </div>
+            <div>
+                <label for="userName">이름</label>
+                <input type="text" id="userName" name="userName" placeholder="이름을 입력하세요" required>
+            </div>
+            <div>
+                <label for="userTel">연락처</label>
+                <input type="text" id="userTel" name="userTel" placeholder="휴대폰 번호 입력('-'제외)" required>
+            </div>
+            <div>
+                <label for="userEmail">이메일 주소</label>
+                <div class="emailWrapper">
+                    <input type="text" id="userEmail" name="userEmail" placeholder="이메일 주소" required>
+                    @
+                    <div class="domainSelect">
+                        <button class="domainBt">선택하세요<i class="fa-solid fa-angle-down"></i></button>
+                        <ul class="domainList">
+                            <li><button class="domainOption">naver.com</button></li>
+                            <li><button class="domainOption">gmail.com</button></li>
+                            <li><button class="domainOption">daum.net</button></li>
+                            <li><button class="domainOption">hanmail.net</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="birthSec">
+                <div>생년월일</div>
+                <div class="userBirthWrapper">
+                    <select id="birthYear" name="birthYear" required>
+                        <option value="" disabled selected>연도</option>
+                    </select>
+                    <select id="birthMonth" name="birthMonth" required>
+                        <option value="" disabled selected>월</option>
+                    </select>
+                    <select id="birthDay" name="birthDay" required>
+                        <option value="" disabled selected>일</option>
+                    </select>
+                </div>
+            </div>
+            <div class="signinBtWrapper">
+                <button class="agree">가입하기</button>
+                <button class="cancel">가입취소</button>
+            </div>
+        </form>
+    </div>
+    <script src="/udt_project/test/js/signin.js"></script>
+</body>
+
+</html>

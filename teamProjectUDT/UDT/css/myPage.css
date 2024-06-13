@@ -1,0 +1,156 @@
+@charset "UTF-8";
+*{
+  /* outline: 1px solid #000; */
+  font-family: pretendard;
+}
+.myPage{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  border-top:1px solid rgba(0, 0, 0, 0.20);
+}
+.cont-select {
+  display: none;
+}
+.mainSection{
+  display: flex;
+  padding: 50px 133px;
+  padding: 50px 133px;
+  gap: 209px;
+}
+.left{
+  position: relative;
+  width: 449px;
+}
+.customInfo > img:first-child {
+  width: 336px;
+  height: 336px;
+  border-radius: 336px;
+}
+.customInfo > img:nth-child(2) {
+  position: absolute;
+  right: 70px; 
+  top: 264px;
+}
+.customInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+}
+.customInfo>div{
+  text-align: center;
+  font-size: 32px;
+}
+.customInfo .cName{
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+  padding-right: 7px;
+}
+.mypageMenu{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px 0;
+  gap: 74px;
+  align-items: center;
+}
+.mySec, .paymentSec{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.mySec > div:nth-child(1),
+.paymentSec > div:nth-child(1) {
+  font-size: 36px;
+  font-weight: bold;
+}
+.mySec > div,
+.paymentSec > div {
+ font-size: 28px; 
+}
+.mypageMenu > button {
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.20);
+  /* border: 1px solid rgba(255, 255, 255, 255); */
+  color: #4e4e4e;
+  /* color: #fff; */
+  background: #fff;
+  font-size: 20px;
+  font-weight: 500 ;
+}
+.right{
+  display: flex;
+  flex-direction: column;
+  width: 604px;
+}
+.myAct{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.myAct>div:nth-child(1){
+  font-size: 32px;
+  font-weight: 600;
+}
+.myActBox{
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  justify-content: space-between;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.20);
+}
+.conBox{
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.boxText,
+.boxNumber{
+  font-size: 24px;
+  font-weight: 600;
+}
+.boxNumber,
+.boxNumber02{
+ color: #595959;
+}
+.conBox02{
+  display: flex;
+  justify-content: space-between;
+}
+.boxText02,
+.boxNumber02 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.eventBox{
+  display: flex;
+  padding: 20px 30px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 35px;
+  background: #c495ff;
+  border-radius: 10px;
+}
+.eventTxt{
+  color: #fff;
+  font-weight: 600;
+}
+.bottomNav {
+  display: none;
+}
+footer .contact {
+  display: flex;
+  gap: 15px;
+  color: #fff;
+}
