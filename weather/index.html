@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Weather</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="search-box">
+      <i class="fa-solid fa-location-dot"></i>
+      <input type="text" placeholder="지역을 입력해주세요.">
+      <button class="fa-solid fa-magnifying-glass"></button>
+    </div>
+
+    <div class="not-found">
+      <iframe src="https://lottie.host/embed/57f97fb0-933c-48cd-ba3c-14b60aa01c57/ycrh11e795.json"
+        style="width: 200px; height: 200px;"></iframe>
+      <!-- <p>페이지를 찾을수가 없대요...🥲</p> -->
+      <p>다시 한번 검색해보시겠어요...?🙏🏻</p>
+    </div>
+
+    <div class="weather-box">
+      <div id="weather-animation"></div>
+      <p class="temperature"></p>
+      <p class="description"></p>
+    </div>
+
+    <div class="weather-details">
+      <div class="humidity">
+        <i class="fa-solid fa-water"></i>
+        <div class="text">
+          <span></span>
+          <p>습도</p>
+        </div>
+      </div>
+      <div class="wind">
+        <i class="fa-solid fa-wind"></i>
+        <div class="text">
+          <span></span>
+          <p>풍속</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+    <div class="wave wave4"></div>
+  </section>
+  <!-- 로티파일 라이브러리 -->
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+  <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+  <script src="weather.js"></script>
+</body>
+
+</html>
