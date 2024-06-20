@@ -9,7 +9,7 @@ html {
   align-items: center;
   flex-direction: column;
   font-family: Arial, sans-serif;
-  background-color: #DCD0FF;
+  background-color: #fff;
   /* 연보라색 */
 }
 
@@ -20,7 +20,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #DCD0FF;
+  background-color: #ffffff;
   /* 연보라색 */
   cursor: pointer;
   position: relative;

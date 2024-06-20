@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #006041;
+  position: relative;
+  overflow: hidden;
+}
+
+.loadingPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  /* background: #006041; */
+  background: #06283D;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.intro {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* intro타이틀이 나오면서 깜빡이는 효과 */
+.intro_title:after {
+  content: '|';
+  display: inline-block;
+  font-size: 50px;
+  animation: moveCursor 500ms infinite;
+}
+
+@keyframes moveCursor {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.scrollBtn {
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+  background-image: url(/portfolio/img/DoubleDown.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  transition: opacity 500ms ease-in;
+  z-index: 200;
+  cursor: pointer;
+}
+
+/* mainpage */
+#mainPage {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-wrap 추가 */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  /* 패딩 조정 */
+  width: 100%;
+  min-height: 100vh;
+  letter-spacing: -0.04em;
+  background-color: #FFF;
+  margin-top: 100vh;
+  /* 인트로 아래로 배치 */
+}
+
+article {
+  margin: 10px;
+  /* 마진 조정 */
+  padding: 20px;
+  background: #e0e0e0;
+  width: calc(30% - 50px);
+  /* 3열 배치를 위해 너비 계산 */
+  height: 280px;
+  /* 높이 고정 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* 메인페이지 아트클 커서 호버 */
+.cursorEft {
+  position: relative;
+  bottom: 0;
+  padding: 20px;
+  max-width: 500px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  transition: bottom 250ms ease-in,
+    box-shadow 250ms ease-in;
+}
+
+.cursorEft:hover {
+  bottom: 5px;
+  box-shadow: rgba(0, 0, 0, 1.15) 0px 5px 20px 0px;
+}
+
+.cursorEft:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gameBox</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+
+<body>
+  <!-- 랜딩페이지 넘어가기 전 게임화면 로딩 느낌의 lottie -->
+  <div class="loadingPage">
+    <iframe style="height: 500px; width: 500px;"
+      src="https://lottie.host/embed/e70e8b11-1c29-46a6-b16f-6eafa047087f/0nA7LGq5fW.json"></iframe>
+  </div>
+
+  <!-- 인트로 부분 -->
+  <header class="intro">
+    <iframe style="height: 500px; width: 500px;"
+      src="https://lottie.host/embed/7f7be062-3110-4c57-9e8a-675e7a17bebd/fGIlfiJuKO.json"></iframe>
+    <h1 class="intro_title animate__animated animate__fadeInDown"></h1>
+    <div class="scrollBtn animate__animated animate__shakeY animate__slower 2s animate__infinite"></div>
+  </header>
+
+  <main id="mainPage">
+    <article class="cursorEft" id="#">1</article>
+    <article class="cursorEft" id="#">2</article>
+    <article class="cursorEft" id="#">3</article>
+    <article class="cursorEft" id="#">4</article>
+    <article class="cursorEft" id="#">5</article>
+    <article class="cursorEft" id="#">6</article>
+    <article class="cursorEft" id="#">7</article>
+    <article class="cursorEft" id="#">8</article>
+    <article class="cursorEft" id="#">9</article>
+  </main>
+
+
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+  <script src="gamebox.js"></script>
+</body>
+
+</html>
