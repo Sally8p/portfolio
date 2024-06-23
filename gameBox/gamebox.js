@@ -27,8 +27,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 1500);
 });
 
+// swiper 슬라이드
 var swiper = new Swiper(".mySwiper", {
-  direction: "vertical",
+  direction: "horizontal",
   slidesPerView: 1,
   spaceBetween: 30,
   mousewheel: true,
@@ -37,17 +38,3 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
-// // 화살표 버튼 누를시 메인페이지로 이동 버튼
-// const pagemoveBt = document.getElementsByClassName("scrollBtn")[0];
-// const mainPage = document.getElementById("mainPage");
-
-// pagemoveBt.addEventListener("click", () => {
-//   document.querySelector(".intro").style.display = "none";
-//   mainPage.scrollIntoView({ behavior: "smooth" });
-// });
-
-// window.addEventListener("scroll", () => {
-//   if (window.scrollY === 0) {
-//     document.querySelector(".intro").style.display = "flex";
-//   }
-// });

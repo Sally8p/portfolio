@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Matching Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="game-container">
+    <iframe src="https://lottie.host/embed/d4fe47c3-4a91-434e-a9e8-d7087f06895f/3RWzsYpVsB.json"
+      id="gameIframe"></iframe>
+    <button id="startButton">게임 시작</button>
+    <div class="game-board" id="gameBoard" style="display: none;"></div>
+    <iframe src="https://lottie.host/embed/a97e346a-9454-478f-b82d-5b376b81e4bf/Xuv93tOhW9.json" id="gameOverIframe"
+      style="display: none;"></iframe>
+    <button id="restartButton" style="display: none;">다시 하기</button>
+    <div id="timer" style="display: none;">0초</div>
+  </div>
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
