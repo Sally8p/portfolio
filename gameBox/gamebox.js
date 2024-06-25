@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 타이틀 문구 타이핑 효과를 90ms 간격으로 실행
     timer = setInterval(typingIntroTitle, 90);
-  }, 1500);
+  }, 500);
 });
 
 // swiper 슬라이드
@@ -38,3 +38,45 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+
+// document.addEventListener("DOMContentLoaded", async () => {
+//   try {
+//     const response = await fetch("data.json"); // data.json 파일을 비동기로 가져옵니다.
+//     const data = await response.json(); // JSON 형식의 응답 데이터를 파싱합니다.
+
+//     const mainPage = document.getElementById("mainPage"); // mainPage 요소를 선택합니다.
+
+//     data.forEach(item => {
+//       const article = document.createElement("article"); // 새로운 article 요소를 생성합니다.
+//       article.className = "cursorEft";
+
+//       const anchor = document.createElement("a"); // a 요소를 생성하고 href 속성을 설정합니다.
+//       anchor.href = item.link;
+//       anchor.className = "article-link";
+
+//       const img = document.createElement("img"); // img 요소를 생성하고 src 및 alt 속성을 설정합니다.
+//       img.src = item.img;
+//       img.alt = item.title;
+
+//       const h1 = document.createElement("h1"); // h1 요소를 생성하고 텍스트 콘텐츠를 설정합니다.
+//       h1.textContent = item.title;
+
+//       anchor.appendChild(img); // a 요소에 img와 h1 요소를 자식으로 추가합니다.
+//       anchor.appendChild(h1);
+//       article.appendChild(anchor); // article 요소에 a 요소를 자식으로 추가합니다.
+//       mainPage.appendChild(article); // mainPage 요소에 article 요소를 자식으로 추가합니다.
+
+//       article.addEventListener("click", () => {
+//         anchor.click();
+//       });
+
+//       [img, h1].forEach(element => {
+//         element.addEventListener("click", e => {
+//           e.stopPropagation(); // img와 h1 요소에 클릭 이벤트 리스너를 추가하여 이벤트 전파를 중지합니다.
+//         });
+//       });
+//     });
+//   } catch (error) {
+//     console.error("Error fetching the JSON data:", error); // 데이터 가져오기 중 오류가 발생하면 콘솔에 오류를 출력합니다.
+//   }
+// });

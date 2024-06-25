@@ -3,7 +3,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #efefef;
+  background-color: rgba(0, 96, 65, 0.7);
 }
 
 #game {

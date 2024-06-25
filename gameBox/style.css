@@ -128,10 +128,12 @@ article {
   width: calc(30% - 50px);
   height: 280px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 24px;
+  gap: 1.25rem
 }
 
 .cursorEft {
@@ -177,4 +179,14 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.gamelist{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+article > img {
+  width: 80px;
+  height: 80px;
 }
