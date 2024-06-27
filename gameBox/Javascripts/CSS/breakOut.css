@@ -1,13 +1,39 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'ONE-Mobile-POP';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 96, 65, 0.7);
+  background-color: #006041;
 }
 
 #game {
   background-color: #ccc;
   margin-top: 10rem;
   border: 2px solid #333;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #febf00;
+  font-family: 'ONE-Mobile-POP';
+}
+
+#home-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #febf00;
 }

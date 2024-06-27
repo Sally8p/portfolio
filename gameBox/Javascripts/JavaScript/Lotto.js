@@ -3,6 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const generateButton = document.querySelector("#generate-button");
   const numbersContainer = document.querySelector("#numbers");
   const lottoContainer = document.querySelector("#lotto-container");
+  const homeButton = document.querySelector("#home-button");
+
+  homeButton.addEventListener("click", () => {
+    window.history.back();
+  });
 
   // 로또 번호 생성 함수
   function addLottoNumber() {
@@ -19,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // 숫자를 화면에 표시하는 함수
   function displayNumbers(numbers) {
     numbersContainer.innerHTML = ""; // 기존 숫자 제거
-      for (const number of numbers) {
+    for (const number of numbers) {
       const numberElement = document.createElement("div");
       numberElement.className = "number";
       numberElement.textContent = number;

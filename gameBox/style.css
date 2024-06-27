@@ -55,6 +55,7 @@ body {
 
 .intro_title,
 .scrtext {
+  display: flex;
   font-family: 'ONE-Mobile-POP';
 }
 
@@ -78,19 +79,9 @@ body {
 /* .scrollBtn { */
 .scrtext {
   position: absolute;
-  /* left: 50%; */
   bottom: 8%;
-  /* transform: translateX(-50%); */
-  /* width: 100px; */
   height: 50px;
-  /* opacity: 1; */
-  /* background-image: url(/portfolio/img/DoubleDown.png); */
-  /* background-repeat: no-repeat; */
-  /* background-position: center center; */
-  /* background-size: contain; */
-  /* transition: opacity 500ms ease-in; */
-  /* z-index: 200; */
-  /* cursor: pointer; */
+
 }
 
 /* Swiper */
@@ -181,12 +172,31 @@ article {
   align-items: center;
 }
 
-.gamelist{
+.gamelist {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-article > img {
+
+a {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  font-family: 'ONE-Mobile-POP';
+  color: #000;
+  text-decoration-line: none;
+}
+
+a>img {
   width: 80px;
   height: 80px;
+}
+
+a>h1 {
+  font-size: 30px;
+}
+
+a>div {
+  font-size: 15px;
 }

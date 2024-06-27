@@ -1,3 +1,11 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const homeButton = document.querySelector("#home-button");
+
+  homeButton.addEventListener("click", () => {
+    window.history.back();
+  });
+});
+
 const $c = document.querySelector("canvas");
 const ctx = $c.getContext("2d");
 const product = [];

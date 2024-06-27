@@ -5,10 +5,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const resultDiv = document.querySelector("#result");
   const startButton = document.querySelector("#start-button");
   const resetButton = document.querySelector("#reset-button");
+  const homeButton = document.querySelector("#home-button");
+
   let startTime, endTime;
   let reactionTimes = [];
   let attempts = 0;
   let timeout;
+
+  homeButton.addEventListener("click", () => {
+    window.history.back();
+  });
 
   function startTest() {
     startButton.style.display = "none";

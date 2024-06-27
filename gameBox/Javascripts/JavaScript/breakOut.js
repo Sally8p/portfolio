@@ -1,3 +1,11 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const homeButton = document.getElementById("home-button");
+
+  homeButton.addEventListener("click", () => {
+    window.history.back();
+  });
+});
+
 let canvas = document.getElementById("game"), // 게임 캔버스 요소 가져오기
   ctx = canvas.getContext("2d"), // 2D 렌더링 컨텍스트 가져오기
   ballRadius = 9, // 공의 반지름
@@ -62,7 +70,7 @@ function drawPaddle() {
 function drawBall() {
   ctx.beginPath();
   ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
-  ctx.fillStyle = "#333";
+  ctx.fillStyle = "#ff6200";
   ctx.fill();
   ctx.closePath();
 }
@@ -142,7 +150,7 @@ function init() {
       dy = -dy;
     } else {
       // 만약 공이 패들에 닿지 않았을 경우
-      alert("Game Over!");
+      alert("게임 종료!! 🥺");
       document.location.reload();
     }
   }

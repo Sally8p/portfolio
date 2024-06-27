@@ -1,5 +1,11 @@
 // DOMContentLoaded 이벤트가 발생하면 실행
 document.addEventListener("DOMContentLoaded", () => {
+  const homeButton = document.querySelector("#home-button");
+
+  homeButton.addEventListener("click", () => {
+    window.history.back();
+  });
+
   // lever 요소와 reels 배열을 가져옴
   const lever = document.querySelector("#lever");
   const reels = [

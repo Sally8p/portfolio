@@ -1,15 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const gameContainer = document.getElementById("game-container");
-  const resultDiv = document.getElementById("result");
-  const startButton = document.getElementById("start-button");
-  const restartButton = document.getElementById("restart-button");
-  const removeButton = document.getElementById("remove-button");
+  const gameContainer = document.querySelector("#game-container");
+  const resultDiv = document.querySelector("#result");
+  const startButton = document.querySelector("#start-button");
+  const restartButton = document.querySelector("#restart-button");
+  const removeButton = document.querySelector("#remove-button");
+  const homeButton = document.querySelector("#home-button");
   const totalBlocks = 50;
   let startTime, endTime;
 
   startButton.addEventListener("click", startGame);
   restartButton.addEventListener("click", restartGame);
   removeButton.addEventListener("click", removeBlock);
+  homeButton.addEventListener("click", () => {
+    window.history.back(); // 페이지 뒤로가기
+  });
 
   function createBlocks() {
     for (let i = 0; i < totalBlocks; i++) {
@@ -27,7 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (blocks.length > 0) {
       blocks[0].classList.add("hidden");
       if (blocks.length === 1) {
-        // After hiding the last block, blocks.length becomes 0
         endTime = new Date();
         const timeTaken = (endTime - startTime) / 1000;
         resultDiv.innerHTML = `게임 종료!<br>소요 시간: ${timeTaken} 초`;
