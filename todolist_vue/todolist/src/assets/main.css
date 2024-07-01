@@ -1,0 +1,74 @@
+/* main.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #d9f0e1;
+  /* 배경색 */
+  background-image: url('path/to/your/background.png');
+  /* 배경 이미지 경로 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20pt;
+  color: #c9dcbb;
+}
+
+.todo-done {
+  text-decoration: line-through;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* 컨테이너를 화면 전체 높이로 설정 */
+  padding: 10px;
+}
+
+.panel-borderless {
+  border: 0;
+  box-shadow: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.test {
+  /* 배경색 */
+  background-color: #6da29f;
+  /* 카드 배경색 */
+  display: flex;
+}
+.test1{
+  width: 1500px;
+}
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #444;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.todo-item-content {
+  flex-grow: 1;
+  /* 글씨 색상 */
+  color: #000000;
+}
+
+.todo-item-actions {
+  display: flex;
+  gap: 10px;
+}
