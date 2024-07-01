@@ -1,4 +1,13 @@
 "use strict";
+
+document.addEventListener('DOMContentLoaded', function() {
+  const homeButton = document.querySelector('#home-button');
+
+  homeButton.addEventListener("click", () => {
+    window.history.back();
+  })
+})
+
 // 사용안하는 카드 이름 제거하기
 const CARD_IMG = [
   "chick",

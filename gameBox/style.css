@@ -19,7 +19,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background: #006041;
+  background: #D9CEC1;
   position: relative;
   overflow: hidden;
 }
@@ -46,7 +46,8 @@ body {
   height: 100vh;
   width: 100vw;
   font-size: 20px;
-  color: white;
+  /* color: #147361; */
+  color: #D9CEC1;
   position: absolute;
   top: 0;
   left: 0;
@@ -96,7 +97,8 @@ body {
   align-items: center;
   font-size: 24px;
   color: #fff;
-  background: #006041;
+  /* background: #D9CEC1; */
+  background: #147361;
 }
 
 /* mainpage */
@@ -110,6 +112,7 @@ body {
   min-height: 100vh;
   letter-spacing: -0.04em;
   background-color: #FFF;
+  background-color: #D9CEC1;
 }
 
 article {

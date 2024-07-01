@@ -71,11 +71,11 @@
 
 .menu__nav-time::before {
   margin-right: 3px;
-  background-image: url('./../img/common/time.png');
+  background-image: url('./img/time.png');
 }
 
 .menu__nav-home--button {
-  background-image: url('./../img/common/home.png');
+  background-image: url('./img/home.png');
 }
 
 .game {
@@ -133,7 +133,7 @@
 /* 카드 뒷면 */
 .card__back {
   transform: rotateY(0deg);
-  background-image: url('./img/chick.png');
+  background-image: url('./img/cardBack.png');
   background-size: 50% auto;
 }
 
