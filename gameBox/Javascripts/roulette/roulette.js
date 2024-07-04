@@ -10,7 +10,7 @@ const $c = document.querySelector("canvas");
 const ctx = $c.getContext("2d");
 const product = [];
 const colors = [];
-const proportions = []; 
+const proportions = [];
 
 const getRandomColor = () => {
   const r = Math.floor(Math.random() * 256);
@@ -20,13 +20,13 @@ const getRandomColor = () => {
 };
 
 const getRandomProportion = () => {
-  return Math.random() + 0.1; // 
+  return Math.random() + 0.1;
 };
 
 const newMake = () => {
   ctx.clearRect(0, 0, $c.width, $c.height);
   const [cw, ch] = [$c.width / 2, $c.height / 2];
-  const totalProportions = proportions.reduce((acc, curr) => acc + curr, 0); 
+  const totalProportions = proportions.reduce((acc, curr) => acc + curr, 0);
 
   let startAngle = 0;
 
@@ -42,7 +42,7 @@ const newMake = () => {
   }
 
   ctx.fillStyle = "#fff";
-  ctx.font = "18px Pretendard";
+  ctx.font = "25px Pretendard";
   ctx.textAlign = "center";
 
   startAngle = 0;
@@ -91,7 +91,7 @@ const rotate = () => {
     $c.style.transition = "2s";
 
     setTimeout(() => {
-      alert(`오늘의 선택은?! ${product[ran]} 어떠신가요?? 😎`);
+      alert(`오늘의 선택은?! " ${product[ran]} " 어떠신가요?? 😎`);
       document.getElementById("rotateBtn").innerText = "다시 돌리기";
       document.getElementById("rotateBtn").onclick = resetRoulette;
     }, 2000);
@@ -146,7 +146,11 @@ const updateMenuList = () => {
   product.forEach((menu, index) => {
     const menuItem = document.createElement("div");
     menuItem.className = "menu-item";
-    menuItem.innerHTML = `<span>${menu}</span><button onclick="removeMenu(${index})">삭제</button>`;
+    menuItem.innerHTML = `
+      <div>
+        <span>${menu}</span>
+        <button onclick="removeMenu(${index})">삭제</button>
+      </div>`;
     menuList.appendChild(menuItem);
   });
 };
