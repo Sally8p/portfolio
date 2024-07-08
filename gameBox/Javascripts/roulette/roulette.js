@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const homeButton = document.querySelector("#home-button");
 
   homeButton.addEventListener("click", () => {
-    window.history.back();
+    window.location.href = "../../index.html#mainPage";
   });
 });
 
@@ -42,7 +42,7 @@ const newMake = () => {
   }
 
   ctx.fillStyle = "#fff";
-  ctx.font = "25px Pretendard";
+  ctx.font = "23px ONE-Mobile-POP";
   ctx.textAlign = "center";
 
   startAngle = 0;
@@ -91,11 +91,37 @@ const rotate = () => {
     $c.style.transition = "2s";
 
     setTimeout(() => {
-      alert(`오늘의 선택은?! " ${product[ran]} " 어떠신가요?? 😎`);
+      const message = `오늘의 선택은?! " ${product[ran]} " 어떠신가요?? 😎`;
+      showModal(message);
       document.getElementById("rotateBtn").innerText = "다시 돌리기";
       document.getElementById("rotateBtn").onclick = resetRoulette;
     }, 2000);
   }, 1);
+};
+
+const showModal = message => {
+  const resultModal = document.getElementById("result-modal");
+  const modalResult = document.getElementById("modal-result");
+  const closeModalButton = document.getElementById("close-modal-button");
+
+  // ${product[ran]} 부분을 span 태그로 감싸고 클래스 추가
+  const formattedMessage = message.replace(
+    /" (.*?) "/,
+    `<span class="highlight">"$1"</span>`
+  );
+
+  modalResult.innerHTML = formattedMessage;
+  resultModal.style.display = "flex";
+
+  closeModalButton.addEventListener("click", () => {
+    resultModal.style.display = "none";
+  });
+
+  window.addEventListener("click", event => {
+    if (event.target == resultModal) {
+      resultModal.style.display = "none";
+    }
+  });
 };
 
 const addMenu = () => {

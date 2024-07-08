@@ -11,7 +11,7 @@
 <body>
   <button id="home-button">홈</button>
   <div class="roulette-container">
-    <div id="marker"></div>
+    <img id="marker" src="./img/arrow.png" alt="마커">
     <canvas width="480" height="480"></canvas>
     <div class="controls">
       <input type="text" id="menuInput" placeholder="메뉴 추가" onkeypress="handleKeyPress(event)">
@@ -20,6 +20,15 @@
     </div>
     <div id="menuList"></div>
   </div>
+
+  <!-- 모달 구조 추가 -->
+  <div id="result-modal" class="modal">
+    <div class="modal-content">
+      <div id="modal-result" class="modal-text"></div>
+      <button id="close-modal-button">닫기</button>
+    </div>
+  </div>
+
   <script src="roulette.js"></script>
 </body>
 

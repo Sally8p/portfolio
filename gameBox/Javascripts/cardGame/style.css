@@ -1,3 +1,27 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'ONE-Mobile-POP';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'ONE-Mobile-POP';
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* 스크롤이 생기지 않도록 설정 */
+}
+
 #container {
   position: relative;
   display: flex;
@@ -5,7 +29,7 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: #000;
+  background-color: #006041;
 }
 
 .board {
@@ -16,6 +40,7 @@
   width: 90%;
   max-width: 646px;
   height: 100%;
+  gap: 10px;
 }
 
 .menu {
@@ -115,7 +140,8 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 2px solid #000;
+  border: 1px solid transparent;
+  /* 테두리를 투명으로 변경 */
   border-radius: 5px;
   background-clip: content-box;
   background-color: #FFF;
@@ -134,7 +160,7 @@
 .card__back {
   transform: rotateY(0deg);
   background-image: url('./img/cardBack.png');
-  background-size: 50% auto;
+  background-size: 70% auto;
 }
 
 .stage-clear {
@@ -145,6 +171,7 @@
   display: none;
   width: 230px;
   height: 230px;
+  
   background-image: url('../img/game-cm/clear.png');
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -177,6 +204,7 @@
   justify-content: center;
   align-items: center;
   width: 70%;
+  max-width: 400px;
   height: auto;
   padding: 30px;
   z-index: 9999;
@@ -207,7 +235,13 @@
 
 .modal__content-close-button {
   width: 100%;
-  font-size: 14px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #febf00;
+  font-family: 'ONE-Mobile-POP';
 }
 
 .white-button {
@@ -217,72 +251,4 @@
 
 .show {
   display: block;
-}
-
-/* Tablet */
-@media screen and (min-width: 768px) {
-  .menu__nav {
-    font-size: 21px;
-  }
-
-  .menu__nav-time,
-  .menu__nav-home {
-    width: 55px;
-  }
-
-  .menu__nav-time::before,
-  .menu__nav-home--button {
-    width: 24px;
-    height: 24px;
-  }
-
-  .menu__nav-time::before {
-    margin-right: 5px;
-  }
-
-  .card__back,
-  .card__front {
-    border: 3px solid #000;
-    border-radius: 6px;
-  }
-
-  .stage-clear {
-    width: 330px;
-    height: 330px;
-  }
-
-  .modal__content {
-    width: 50%;
-  }
-
-  .modal__content-title--result {
-    margin-bottom: 15px;
-  }
-
-  .modal__content-title--stage {
-    font-size: 21px;
-    margin-bottom: 15px;
-  }
-
-  .modal__content-title--desc {
-    font-size: 18px;
-  }
-
-  .modal__content-close-button {
-    font-size: 17px;
-  }
-}
-
-/* Desktop */
-@media screen and (min-width: 1024px) {
-
-  .card__back,
-  .card__front {
-    border: 4px solid #000;
-    border-radius: 7px;
-  }
-
-  .modal__content {
-    width: 20%;
-  }
 }

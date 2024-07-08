@@ -20,6 +20,12 @@ body {
   margin: 0;
 }
 
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .game-container {
   position: relative;
   width: 620px;
@@ -30,6 +36,7 @@ body {
   align-items: center;
   justify-content: center;
   border: 1px solid #000;
+  margin-right: 20px;
 }
 
 canvas {
@@ -103,4 +110,57 @@ button:active {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+
+/* 모달 스타일 */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.modal-text {
+  margin-bottom: 10px;
+}
+
+#close-modal-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #febf00;
+  font-family: 'ONE-Mobile-POP';
+}
+
+/* 점수 기록 스타일 */
+.score-history {
+  font-size: 1rem;
+  color: #fff;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.score-history div {
+  margin-bottom: 5px;
 }

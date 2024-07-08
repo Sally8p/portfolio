@@ -6,7 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const homeButton = document.querySelector("#home-button");
 
   homeButton.addEventListener("click", () => {
-    window.history.back();
+    const homeButton = document.querySelector("#home-button");
+    homeButton.addEventListener("click", () => {
+      window.location.href = "../../index.html#mainPage";
+    });
   });
 
   // 로또 번호 생성 함수

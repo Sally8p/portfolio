@@ -17,10 +17,8 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: Arial, sans-serif;
-  /* background-color: #fff; */
+  font-family: 'ONE-Mobile-POP';
   background-color: #006041;
-  /* 연보라색 */
 }
 
 #frame {
@@ -31,14 +29,12 @@ html {
   justify-content: center;
   align-items: center;
   background-color: #006041;
-  /* 연보라색 */
   cursor: pointer;
   position: relative;
 }
 
 #status,
-#count,
-#result {
+#count {
   font-size: 24px;
   color: white;
   margin: 10px 0;
@@ -48,10 +44,6 @@ html {
   font-size: 48px;
 }
 
-#result {
-  display: none;
-}
-
 button {
   margin-top: 20px;
   padding: 10px 20px;
@@ -59,20 +51,7 @@ button {
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  /* background-color: #4CAF50; */
-  /* color: white; */
-}
-
-/* button:hover {
-  background-color: #45a049;
-} */
-
-button {
-  margin: 10px;
-  padding: 10px 20px;
-  cursor: pointer;
   background-color: #febf00;
-
   font-family: 'ONE-Mobile-POP';
 }
 
@@ -81,4 +60,51 @@ button {
   top: 10px;
   right: 10px;
   background-color: #febf00;
+}
+
+/* 모달 스타일 */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 25px;
+}
+
+.modal-text {
+  margin-bottom: 10px;
+}
+
+#modal-restart-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #febf00;
+  font-family: 'ONE-Mobile-POP';
 }

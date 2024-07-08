@@ -4,24 +4,24 @@ document.addEventListener('DOMContentLoaded', function() {
   const homeButton = document.querySelector('#home-button');
 
   homeButton.addEventListener("click", () => {
-    window.history.back();
+    window.location.href = "../../index.html#mainPage";
   })
 })
 
-// 사용안하는 카드 이름 제거하기
+// 사용할 카드 이름
 const CARD_IMG = [
-  "chick",
-  "cow",
-  "dolphin",
-  "frog",
-  "horse",
-  "pig",
-  "porcupine",
   "rabbit",
-  "rat-head",
-  "squid",
-  "tiger",
-  "whale",
+  "rabbit2",
+  "rabbit3",
+  "rabbit4",
+  "dog",
+  "dog2",
+  "dog3",
+  "dog4",
+  "cat",
+  "cat2",
+  "cat3",
+  "cat4",
 ];
 const BOARD_SIZE = 24;
 
@@ -112,7 +112,7 @@ function startTimer() {
 
 // 카드 덱 생성
 function makeCardDeck() {
-  // 이미지는 27개인데 필요한 카드는 12개로 고정되어 있기 때문에 27개의 이미지 중 랜덤으로 12개를 뽑도록 구현
+  // 이미지 12개 저장
   let randomNumberArr = [];
 
   for (let i = 0; i < BOARD_SIZE / 2; i++) {

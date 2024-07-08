@@ -2,10 +2,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const frame = document.querySelector("#frame");
   const statusDiv = document.querySelector("#status");
   const countDiv = document.querySelector("#count");
-  const resultDiv = document.querySelector("#result");
   const startButton = document.querySelector("#start-button");
-  const resetButton = document.querySelector("#reset-button");
   const homeButton = document.querySelector("#home-button");
+  const resultModal = document.querySelector("#result-modal");
+  const modalResult = document.querySelector("#modal-result");
+  const modalRestartButton = document.querySelector("#modal-restart-button");
 
   let startTime, endTime;
   let reactionTimes = [];
@@ -13,16 +14,19 @@ document.addEventListener("DOMContentLoaded", () => {
   let timeout;
 
   homeButton.addEventListener("click", () => {
-    window.history.back();
+    window.location.href = "../../index.html#mainPage";
+  });
+
+  modalRestartButton.addEventListener("click", () => {
+    resultModal.style.display = "none";
+    startTest();
   });
 
   function startTest() {
     startButton.style.display = "none";
-    resetButton.style.display = "none";
     frame.style.backgroundColor = "#DCD0FF"; // 연보라색
-    statusDiv.textContent = "";
+    statusDiv.textContent = "게임 시작!";
     countDiv.textContent = "";
-    resultDiv.style.display = "none";
     reactionTimes = [];
     attempts = 0;
     nextAttempt();
@@ -32,17 +36,17 @@ document.addEventListener("DOMContentLoaded", () => {
     if (attempts >= 5) {
       const averageTime =
         reactionTimes.reduce((a, b) => a + b) / reactionTimes.length;
+      modalResult.innerHTML = `게임 종료!<br>평균 반응 시간: ${averageTime.toFixed(
+        3
+      )} 초`;
+      resultModal.style.display = "flex";
       frame.style.backgroundColor = "#0000FF"; // 파란색
       statusDiv.textContent = "";
-      resultDiv.textContent = `평균 반응 시간: ${averageTime.toFixed(3)} 초`;
-      resultDiv.style.display = "block";
-      resetButton.style.display = "block";
       return;
     }
 
     frame.style.backgroundColor = "#FF0000"; // 빨간색
     statusDiv.textContent = "준비";
-    resultDiv.style.display = "none";
     countDiv.textContent = `카운트: ${attempts + 1} / 5`;
 
     const delay = Math.random() * 4000;
@@ -56,7 +60,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   frame.addEventListener("click", () => {
     if (frame.style.backgroundColor === "rgb(0, 255, 0)") {
-      // 초록색
       endTime = new Date().getTime();
       const reactionTime = (endTime - startTime) / 1000;
       reactionTimes.push(reactionTime);
@@ -69,5 +72,4 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   startButton.addEventListener("click", startTest);
-  resetButton.addEventListener("click", startTest);
 });

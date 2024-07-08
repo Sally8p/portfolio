@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const homeButton = document.getElementById("home-button");
-
+  const homeButton = document.querySelector("#home-button");
   homeButton.addEventListener("click", () => {
-    window.history.back();
+    window.location.href = "../../index.html#mainPage";
   });
 });
 
