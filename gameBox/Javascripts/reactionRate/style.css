@@ -86,10 +86,17 @@ button {
 }
 
 #home-button {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #febf00;
+  font-family: 'ONE-Mobile-POP';
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #febf00;
 }
 
 /* 모달 스타일 */

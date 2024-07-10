@@ -62,8 +62,8 @@ body {
   width: 100px;
   height: 150px;
   overflow: hidden;
-  border-radius: 1ex;
-  margin: 1ch;
+  border-radius: 10px;
+  margin: 20px; 
 }
 
 .boxes {
@@ -75,14 +75,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3rem;
+  font-size: 48px;
 }
 
 button {
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 19.2px;
   text-transform: uppercase;
-  margin: 0 0.2rem 0 0.2rem;
 }
 
 .info {
@@ -95,7 +94,7 @@ button {
 .buttons {
   display: flex;
   justify-content: center;
-  margin: 1rem 0 2rem 0;
+  margin: 16px 0 32px 0;
   gap: 20px;
 }
 
@@ -105,9 +104,9 @@ button {
 
 button {
   cursor: pointer;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  margin: 0 0.5rem;
+  font-size: 19px;
+  /* text-transform: uppercase; */
+  margin: 0 8px;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -121,6 +120,14 @@ button:hover {
 }
 
 #home-button {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #febf00;
+  font-family: 'ONE-Mobile-POP';
   position: absolute;
   top: 10px;
   right: 10px;
