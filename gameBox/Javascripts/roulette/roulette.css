@@ -20,6 +20,30 @@ body {
   margin: 0;
 }
 
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  font-family: 'ONE-Mobile-POP';
+  text-shadow: 4px 1px 3px #000;
+}
+
+#game-instructions {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: #fff;
+  font-family: 'ONE-Mobile-POP';
+  text-shadow: 2px 1px 3px #000;
+}
+
 .roulette-container {
   background: #ffffff;
   padding: 20px;

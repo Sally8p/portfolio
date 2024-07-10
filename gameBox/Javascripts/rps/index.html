@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>가위바위보</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <button id="home-button">홈</button>
+  <div id="game-container">
+    <h1>가위바위보</h1>
+    <div id="game">
+      <div class="card" id="computer-card">
+        <img src="" alt="Computer Choice" id="computer-image">
+      </div>
+      <div class="button-container">
+        <button class="choice" id="rock-button">바위</button>
+        <button class="choice" id="paper-button">보</button>
+        <button class="choice" id="scissors-button">가위</button>
+      </div>
+    </div>
+    <div id="result-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>결과</h2>
+        <div id="result"></div>
+        <div id="computer-choice"></div>
+      </div>
+    </div>
+    <div id="history-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-history-button">&times;</span>
+        <h2>결과 기록</h2>
+        <div class="stats">
+          <p>승리: <span id="win-count">0</span></p>
+          <p>패배: <span id="lose-count">0</span></p>
+          <p>무승부: <span id="draw-count">0</span></p>
+        </div>
+        <div id="history"></div>
+      </div>
+    </div>
+    <button id="history-button" class="animate__animated animate__heartBeat animate__infinite ">결과 기록 보기</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

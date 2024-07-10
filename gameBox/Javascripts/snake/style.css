@@ -22,25 +22,52 @@ body {
 
 .main-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  font-family: 'ONE-Mobile-POP';
+  text-shadow: 4px 1px 3px #000;
+}
+
+#game-instructions {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: #fff;
+  font-family: 'ONE-Mobile-POP';
+  text-shadow: 2px 1px 3px #000;
+}
+
+.game-content {
+  display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color:#ccc;
 }
 
 .game-container {
   position: relative;
-  width: 620px;
-  height: 620px;
+  width: 640px;
+  height: 640px;
+  padding: 7px;
   background: #232332;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid #000;
-  margin-right: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 
 canvas {
   background: #232332;
+  box-sizing: border-box;
 }
 
 .score {
@@ -57,6 +84,7 @@ canvas {
   display: flex;
   justify-content: center;
   width: 100%;
+  gap: 10px;
 }
 
 button {
@@ -133,7 +161,7 @@ button:active {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  max-width: 500px;
+  max-width: 300px;
   text-align: center;
   border-radius: 10px;
 }
@@ -142,7 +170,8 @@ button:active {
   margin-bottom: 10px;
 }
 
-#close-modal-button {
+#close-modal-button,
+#close-score-modal-button {
   margin-top: 20px;
   padding: 10px 20px;
   font-size: 16px;
@@ -155,10 +184,8 @@ button:active {
 
 /* 점수 기록 스타일 */
 .score-history {
-  font-size: 1rem;
-  color: #fff;
-  text-align: left;
-  margin-left: 20px;
+  font-size: 1.2rem;
+  color: #333;
 }
 
 .score-history div {

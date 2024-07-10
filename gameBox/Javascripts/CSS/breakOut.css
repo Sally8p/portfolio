@@ -8,17 +8,35 @@
 }
 
 body {
-  height: 100%;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #006041;
+  margin: 0;
+}
+
+h1 {
+  color: #fff;
+  font-size: 40px;
+  font-family: 'ONE-Mobile-POP';
+  text-shadow: 4px 1px 3px #000;
+}
+
+#game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 #game {
   background-color: #ccc;
-  margin-top: 10rem;
-  border: 2px solid #333;
+  border: 20px solid #333;
+  border-radius: 15px;
+  cursor: none;
 }
 
 button {
@@ -36,4 +54,59 @@ button {
   top: 10px;
   right: 10px;
   background-color: #febf00;
+}
+
+#start-button {
+  background: #febf00;
+  padding: .8rem 1.8rem;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 300px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#restart-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #febf00;
+  border: none;
+  border-radius: 5px;
+}
+
+/* 게임 방법 스타일 */
+#game-instructions {
+  display: none;
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+  font-family: 'ONE-Mobile-POP';
+  text-shadow: 2px 1px 3px #000;
 }

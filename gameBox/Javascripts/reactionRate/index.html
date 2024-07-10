@@ -9,12 +9,21 @@
 </head>
 
 <body>
+  <div id="center-content">
+    <h1>반응 속도 테스트</h1>
+    <div id="instructions">
+      <h2>게임 방법</h2>
+      <p>시작 버튼을 누르고 화면이 초록색으로 바뀌면 최대한 빨리 클릭하세요.<br>초록색으로 바뀌는 시간은 랜덤입니다.<br>최고의 반응속도를 보여주세요!! 😎</p>
+    </div>
+    <div id="controls">
+      <button id="start-button">시작</button>
+    </div>
+  </div>
   <button id="home-button">홈</button>
-  <div id="frame">
+  <div id="frame" style="display: none;">
     <div id="status"></div>
     <div id="count"></div>
   </div>
-  <button id="start-button">시작</button>
 
   <!-- 모달 구조 추가 -->
   <div id="result-modal" class="modal">

@@ -19,7 +19,6 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  /* 스크롤이 생기지 않도록 설정 */
 }
 
 #container {
@@ -32,6 +31,32 @@ body {
   background-color: #006041;
 }
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  font-family: 'ONE-Mobile-POP';
+  text-shadow: 4px 1px 3px #000;
+}
+
+#game-instructions {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: #fff;
+  font-family: 'ONE-Mobile-POP';
+  text-shadow: 2px 1px 3px #000;
+}
+
 .board {
   display: flex;
   flex-direction: column;
@@ -39,8 +64,10 @@ body {
   align-items: center;
   width: 90%;
   max-width: 646px;
-  height: 100%;
   gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ccc;
 }
 
 .menu {
@@ -68,22 +95,7 @@ body {
   margin-right: 10px;
 }
 
-.menu__nav-stage {
-  justify-content: center;
-  flex-grow: 1;
-}
-
-#player-stage {
-  padding-left: 3px;
-}
-
-.menu__nav-home {
-  justify-content: flex-end;
-  width: 45px;
-}
-
-.menu__nav-time::before,
-.menu__nav-home--button {
+.menu__nav-time::before {
   content: '';
   display: block;
   width: 20px;
@@ -92,15 +104,16 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-.menu__nav-time::before {
-  margin-right: 3px;
   background-image: url('./img/time.png');
 }
 
-.menu__nav-home--button {
-  background-image: url('./img/home.png');
+.menu__nav-stage {
+  justify-content: center;
+  flex-grow: 1;
+}
+
+#player-stage {
+  padding-left: 3px;
 }
 
 .game {
@@ -141,7 +154,6 @@ body {
   width: 100%;
   height: 100%;
   border: 1px solid transparent;
-  /* 테두리를 투명으로 변경 */
   border-radius: 5px;
   background-clip: content-box;
   background-color: #FFF;
@@ -156,7 +168,6 @@ body {
   background-size: 80% auto;
 }
 
-/* 카드 뒷면 */
 .card__back {
   transform: rotateY(0deg);
   background-image: url('./img/cardBack.png');
@@ -171,7 +182,6 @@ body {
   display: none;
   width: 230px;
   height: 230px;
-  
   background-image: url('../img/game-cm/clear.png');
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -221,6 +231,9 @@ body {
 .modal__content-title--result {
   font-size: 21px;
   margin-bottom: 10px;
+  color: #000;
+  text-shadow: none;
+
 }
 
 .modal__content-title--stage {
@@ -252,3 +265,16 @@ body {
 .show {
   display: block;
 }
+
+#home-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #febf00;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'ONE-Mobile-POP';
+  }

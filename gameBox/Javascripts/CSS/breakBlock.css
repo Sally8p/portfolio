@@ -28,6 +28,15 @@ body {
   background-color: #fff;
 }
 
+#game-instructions {
+  display: none;
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+  font-family: 'ONE-Mobile-POP';
+  text-shadow: 2px 1px 3px #000;
+}
+
 .block {
   width: 50px;
   height: 50px;
@@ -58,11 +67,14 @@ button {
   cursor: pointer;
   background-color: #febf00;
   font-family: 'ONE-Mobile-POP';
+  border: none;
 }
 
 h1 {
   color: #fff;
+  font-size: 40px;
   font-family: 'ONE-Mobile-POP';
+  text-shadow: 4px 1px 3px #000;
 }
 
 #home-button {
@@ -95,13 +107,18 @@ h1 {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  max-width: 500px;
+  max-width: 400px;
   text-align: center;
   border-radius: 10px;
 }
 
 .modal-text p {
   margin-bottom: 10px;
+}
+
+.modal-text {
+  font-family: 'ONE-Mobile-POP';
+  font-size: 20px;
 }
 
 #close-button {

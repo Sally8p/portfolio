@@ -11,22 +11,39 @@
 <body>
   <button id="home-button">홈</button>
   <div class="main-container">
-    <div class="game-container">
-      <div id="startScreen">
-        <button id="startButton" onclick="startGame()">게임 시작</button>
-      </div>
-      <div id="gameScreen" style="display: none;">
-        <div class="score">Score: <span id="score">0</span></div>
-        <canvas id="gameCanvas"></canvas>
-        <div class="controls" id="gameControls" style="display: none;">
-          <button id="restartButton" onclick="resetGame()">다시 시작</button>
+    <h1>Snake Game</h1>
+    <div id="game-instructions">
+      <h2>게임 방법</h2>
+      <p>게임 시작 버튼을 눌러 뱀을 이동시키며 점수를 획득하세요!<br>엔터를 누르면 바로 시작할 수 있습니다.<br>
+        <hr>이동: 방향키 ←↑→↓
+      </p>
+    </div>
+    <div class="game-content">
+      <div class="game-container">
+        <div id="startScreen">
+          <button id="startButton" onclick="startGame()">게임 시작</button>
+        </div>
+        <div id="gameScreen" style="display: none;">
+          <div class="score">Score: <span id="score">0</span></div>
+          <canvas id="gameCanvas"></canvas>
+          <div class="controls" id="gameControls" style="display: none;">
+            <button id="restartButton" onclick="resetGame()">다시 시작</button>
+            <button id="showResultsButton" onclick="showResults()">결과보기</button>
+          </div>
         </div>
       </div>
     </div>
-    <div id="score-history" class="score-history"></div>
   </div>
 
-  <!-- 모달 구조 추가 -->
+  <!-- 결과 모달 -->
+  <div id="score-modal" class="modal">
+    <div class="modal-content">
+      <div id="score-modal-result" class="modal-text"></div>
+      <button id="close-score-modal-button">닫기</button>
+    </div>
+  </div>
+
+  <!-- 게임 오버 모달 -->
   <div id="result-modal" class="modal">
     <div class="modal-content">
       <div id="modal-result" class="modal-text"></div>

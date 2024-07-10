@@ -10,15 +10,22 @@
 
 <body>
   <button id="home-button">홈</button>
-  <div class="roulette-container">
-    <img id="marker" src="./img/arrow.png" alt="마커">
-    <canvas width="480" height="480"></canvas>
-    <div class="controls">
-      <input type="text" id="menuInput" placeholder="메뉴 추가" onkeypress="handleKeyPress(event)">
-      <button onclick="addMenu()">메뉴 추가</button>
-      <button id="rotateBtn" onclick="rotate()">룰렛 돌리기</button>
+  <div class="center-container">
+    <h1>룰렛 돌리기</h1>
+    <div id="game-instructions">
+      <h2>게임 방법</h2>
+      <p>룰렛에 메뉴를 추가하고 돌려보세요!<br>메뉴는 총 10개까지 추가가 됩니다.</p>
     </div>
-    <div id="menuList"></div>
+    <div class="roulette-container">
+      <img id="marker" src="./img/arrow.png" alt="마커">
+      <canvas width="480" height="480"></canvas>
+      <div class="controls">
+        <input type="text" id="menuInput" placeholder="메뉴 추가" onkeypress="handleKeyPress(event)">
+        <button onclick="addMenu()">메뉴 추가</button>
+        <button id="rotateBtn" onclick="rotate()">룰렛 돌리기</button>
+      </div>
+      <div id="menuList"></div>
+    </div>
   </div>
 
   <!-- 모달 구조 추가 -->

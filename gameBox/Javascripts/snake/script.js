@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // 홈 버튼 클릭 이벤트 리스너 추가
   const homeButton = document.querySelector("#home-button");
-
   homeButton.addEventListener("click", () => {
     window.location.href = "../../index.html#mainPage";
   });
@@ -19,12 +19,16 @@ const gameScreen = document.getElementById("gameScreen");
 const controls = document.getElementById("gameControls");
 
 // 점수 기록을 표시할 요소 가져오기
-const scoreHistory = document.getElementById("score-history");
+const scoreHistory = document.getElementById("score-modal-result");
 
 // 모달 요소 가져오기
 const resultModal = document.getElementById("result-modal");
 const modalResult = document.getElementById("modal-result");
 const closeModalButton = document.getElementById("close-modal-button");
+const scoreModal = document.getElementById("score-modal");
+const closeScoreModalButton = document.getElementById(
+  "close-score-modal-button"
+);
 
 // 게임 속성 정의
 const gridSize = 20; // 그리드 하나의 크기 (20 픽셀)
@@ -225,16 +229,35 @@ function closeModal() {
 // 점수 기록 업데이트 함수
 function updateScoreHistory() {
   scoreHistory.innerHTML = scoreRecords
-    .map((score, index) => `<div>${index + 1}. ${score}개</div>`)
+    .map((score, index) => `<div>${index + 1}. 먹은 갯수: ${score}개 🍫</div>`)
     .join("");
+}
+
+// 점수 기록 모달 표시 함수
+function showResults() {
+  scoreModal.style.display = "flex";
+  isModalOpen = true;
+}
+
+// 점수 기록 모달 닫기 함수
+function closeScoreModal() {
+  scoreModal.style.display = "none";
+  isModalOpen = false;
 }
 
 closeModalButton.addEventListener("click", () => {
   closeModal();
 });
 
+closeScoreModalButton.addEventListener("click", () => {
+  closeScoreModal();
+});
+
 window.addEventListener("click", event => {
   if (event.target == resultModal) {
     closeModal();
+  }
+  if (event.target == scoreModal) {
+    closeScoreModal();
   }
 });

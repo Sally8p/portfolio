@@ -11,21 +11,23 @@
 
 <body>
   <h1>얼음 부수기</h1>
+
   <button id="home-button">홈</button>
   <button id="start-button">게임 시작</button>
   <button id="restart-button" style="display:none;">다시하기!</button>
+  <div id="game-instructions">
+    <h2>게임 방법</h2>
+    <p>'누르기' 버튼을 빠르게 눌러 50개의 얼음을 부숴보자!!</p>
+  </div>
   <div id="game-container" style="display:none;"></div>
-  <button id="remove-button" style="display: none; ">누르기!</button>
+  <button id="remove-button" style="display: none;">누르기!</button>
   <div id="result"></div>
-
-  <!-- 모달 구조 수정 -->
-  <div id="result-modal" class="modal" style="display: none;">
+  <div id="result-modal" class="modal">
     <div class="modal-content">
       <div id="modal-result" class="modal-text"></div>
       <button id="close-button">닫기</button>
     </div>
   </div>
-
   <script src="script.js"></script>
   <script src="/portfolio/gameBox/Javascripts/JavaScript/breakBlock.js"></script>
 </body>

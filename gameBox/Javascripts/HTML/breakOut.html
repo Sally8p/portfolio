@@ -6,12 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/portfolio/gameBox/Javascripts/CSS/breakOut.css">
   <title>벽돌 깨기</title>
-
 </head>
 
 <body>
+  <h1>벽돌 깨기</h1>
   <button id="home-button">홈</button>
-  <canvas id="game" width="650" height="450"></canvas>
+  <div id="game-instructions">
+    <h2>게임 방법</h2>
+    <p>마우스를 움직여 패들을 이용해 공을 튕겨 벽돌을 모두 부숴보세요!</p>
+  </div>
+  <div class="container">
+    <div id="game-container">
+      <canvas id="game" width="650" height="450"></canvas>
+      <button id="start-button">게임 시작</button>
+    </div>
+  </div>
+
+  <div id="game-over-modal" class="modal">
+    <div class="modal-content">
+      <h2>게임 종료</h2>
+      <button id="restart-button">다시하기</button>
+    </div>
+  </div>
 
   <script src="/portfolio/gameBox/Javascripts/JavaScript/breakOut.js"></script>
 </body>

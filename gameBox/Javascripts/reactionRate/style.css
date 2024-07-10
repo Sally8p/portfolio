@@ -16,9 +16,19 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   font-family: 'ONE-Mobile-POP';
   background-color: #006041;
+}
+
+#center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #frame {
@@ -42,6 +52,26 @@ html {
 
 #status {
   font-size: 48px;
+}
+
+#controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#instructions {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 40px;
+  font-family: 'ONE-Mobile-POP';
+  text-shadow: 4px 1px 3px #000;
 }
 
 button {

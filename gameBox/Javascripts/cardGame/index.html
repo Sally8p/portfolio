@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Game World : 카드 짝 맞추기</title>
-  <meta name="description" content="Vanilla JS를 이용한 Mini Game Project - 카드 짝 맞추기">
+  <title>짝맞추기 게임</title>
   <link rel="icon" type="image/x-ico" href="./resources/favicon/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,40 +15,41 @@
 </head>
 
 <body>
+  <button id="home-button">홈</button>
   <div id="container" class="no-drag">
-    <div class="board">
-      <header class="menu">
-        <nav class="menu__nav">
-          <div class="menu__nav-time">
-            <strong id="player-time" class="blink" aria-label="남은 시간">60</strong>
-          </div>
-          <div class="menu__nav-stage">
-            STAGE<strong id="player-stage" aria-label="스테이지">1</strong>
-          </div>
-          <div class="menu__nav-home">
-            <a href="./index.html#card-matching" class="menu__nav-home--button" id="home-button">
-              <span class="sr-only"></span>
-            </a>
-          </div>
-        </nav>
-      </header>
+    <div class="main-container">
+      <h1>짝맞추기 게임</h1>
+      <div id="game-instructions">
+        <h2>게임 방법</h2>
+        <p>카드를 클릭하여 짝을 맞추세요! 모든 짝을 맞추면 다음 단계로 이동합니다.</p>
+      </div>
+      <div class="board">
+        <header class="menu">
+          <nav class="menu__nav">
+            <div class="menu__nav-time">
+              <strong id="player-time" class="blink" aria-label="남은 시간">60</strong>
+            </div>
+            <div class="menu__nav-stage">
+              STAGE<strong id="player-stage" aria-label="스테이지">1</strong>
+            </div>
+          </nav>
+        </header>
 
-      <main class="game">
-        <div class="game__board">
+        <main class="game">
+          <div class="game__board"></div>
+        </main>
+
+        <div class="stage-clear"></div>
+      </div>
+
+      <div class="modal modal-layer">
+        <div class="modal__content">
+          <div class="modal__content-title"></div>
+
+          <button class="white-button modal__content-close-button" type="button">
+            닫기
+          </button>
         </div>
-      </main>
-
-      <div class="stage-clear"></div>
-    </div>
-
-    <div class="modal modal-layer">
-      <div class="modal__content">
-        <div class="modal__content-title">
-        </div>
-
-        <button class="white-button modal__content-close-button" type="button">
-          닫기
-        </button>
       </div>
     </div>
   </div>

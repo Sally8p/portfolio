@@ -7,101 +7,138 @@
   font-style: normal;
 }
 
+html,
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100vw;
   height: 100vh;
-  background-color: #006041;
   margin: 0;
-  /* font-family: Arial, sans-serif; */
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #006041;
 }
 
-#slot-machine {
-  width: 300px;
-  height: 500px;
-  background-color: #333;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
-.screen {
+#app {
   width: 100%;
-  height: 200px;
-  background-color: #222;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  overflow: hidden;
-}
-
-.reel {
-  width: 80px;
   height: 100%;
-  background-color: #444;
-  color: white;
-  font-size: 2em;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  position: relative;
+}
+
+.machine {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  background-color: #222;
+  border-radius: 15px;
+  padding: 20px;
+  gap: 20px;
+}
+
+.game-container {
+  padding: 20px;
+  background-color: #ccc;
+  border-radius: 15px;
+}
+
+.doors {
+  display: flex;
+}
+
+.door {
+  background: #fafafa;
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.4) inset;
+  width: 100px;
+  height: 150px;
   overflow: hidden;
+  border-radius: 1ex;
+  margin: 1ch;
 }
 
-.reel div {
-  height: 100px;
-  width: 100%;
+.boxes {
+  transition: transform 0.5s ease-in-out;
+  /* 슬롯이 돌아가는 속도를 2배 빠르게 설정 */
+}
+
+.box {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-#lever-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-#lever {
-  width: 20px;
-  height: 100px;
-  background-color: #555;
-  cursor: pointer;
-  position: relative;
-}
-
-#lever::before {
-  content: '';
-  width: 40px;
-  height: 40px;
-  background-color: #febf00;
-  border-radius: 50%;
-  position: absolute;
-  top: -20px;
-  left: -10px;
+  font-size: 3rem;
 }
 
 button {
-  margin: 10px;
-  padding: 10px 20px;
-  border-radius: 10px;
-  font-size: 16px;
   cursor: pointer;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 0 0.2rem 0 0.2rem;
+}
+
+.info {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 2rem 0;
+  gap: 20px;
+}
+
+.buttons button {
+  width: 150px;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 0 0.5rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
   background-color: #febf00;
   font-family: 'ONE-Mobile-POP';
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffd700;
 }
 
 #home-button {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #febf00;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  font-family: 'ONE-Mobile-POP';
+  text-shadow: 4px 1px 3px #000;
+}
+
+#game-instructions {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: #fff;
+  font-family: 'ONE-Mobile-POP';
+  text-shadow: 2px 1px 3px #000;
 }
