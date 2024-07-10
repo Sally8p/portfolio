@@ -41,10 +41,6 @@ const newMake = () => {
     startAngle += arc;
   }
 
-  ctx.fillStyle = "#fff";
-  ctx.font = "23px ONE-Mobile-POP";
-  ctx.textAlign = "center";
-
   startAngle = 0;
 
   for (let i = 0; i < product.length; i++) {
@@ -59,6 +55,15 @@ const newMake = () => {
     );
 
     ctx.rotate(angle + Math.PI / 2);
+
+    // 텍스트 설정 및 그림자 추가
+    ctx.fillStyle = "#fff"; // 텍스트 색상 검은색
+    ctx.font = "23px ONE-Mobile-POP";
+    ctx.textAlign = "center";
+    ctx.shadowColor = "#000"; // 텍스트 그림자 색상 흰색
+    ctx.shadowOffsetX = 1; // 그림자 x축 오프셋
+    ctx.shadowOffsetY = 1; // 그림자 y축 오프셋
+    ctx.shadowBlur = 2; // 그림자 블러 효과
 
     product[i].split(" ").forEach((text, j) => {
       ctx.fillText(text, 0, 30 * j);

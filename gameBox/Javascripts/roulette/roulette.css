@@ -54,11 +54,13 @@ h1 {
   align-items: center;
   position: relative;
   width: 500px;
+
 }
 
 canvas {
   transition: 2s;
   pointer-events: none;
+
 }
 
 #marker {
