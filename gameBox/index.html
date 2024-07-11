@@ -5,120 +5,124 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>gameBox</title>
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- 랜딩페이지 넘어가기 전 게임화면 로딩 느낌의 lottie -->
   <div class="loadingPage">
     <iframe style="height: 500px; width: 500px;"
       src="https://lottie.host/embed/e70e8b11-1c29-46a6-b16f-6eafa047087f/0nA7LGq5fW.json"></iframe>
   </div>
 
-  <!-- Swiper -->
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-
-      <div class="swiper-slide">
+      <div class="swiper-slide intro-slide">
         <div class="intro_container">
           <header class="intro">
             <iframe style="height: 500px; width: 500px;"
               src="https://lottie.host/embed/7f7be062-3110-4c57-9e8a-675e7a17bebd/fGIlfiJuKO.json"></iframe>
             <h1 class="intro_title animate__animated animate__fadeInDown"></h1>
-            <div class="scrtext animate__animated animate__shakeY animate__slower 2s animate__infinite">Scroll down!!
-              👉🏻
+            <div class="scrtext animate__animated animate__shakeY animate__slower 2s animate__infinite">Click Me!! 👆🏻
             </div>
+          </header>
         </div>
-        </header>
       </div>
 
-      <div class="swiper-slide">
-        <main id="mainPage">
-          <article class="cursorEft" id="break-Block">
-            <a href="./Javascripts/HTML/breakBlock.html">
-              <!-- <img src="./Javascripts/img/breakIce.png" alt="얼음부수기 이미지"> -->
-              <iframe src="https://lottie.host/embed/877d9458-4bd4-40b1-9d06-4f43cbb70c4f/vw1TIV9bod.json"></iframe>
-              <h1>얼음 부수기</h1>
-              <div>50개의 블럭을 빠르게 눌러 얼음 부수기!</div>
-            </a>
-          </article>
-          <article class="cursorEft" id="">
-            <a href="./Javascripts/HTML/breakOut.html">
-              <!-- <img src="/portfolio/gameBox/Javascripts/img/free-icon-brick-breaker-3069044.png" alt="벽돌깨기 이미지"> -->
-              <!-- <iframe src="https://lottie.host/embed/85ca04ed-7f33-4d44-a99a-5c53c088efef/t41QxQdnvq.json"></iframe> -->
-              <iframe src="https://lottie.host/embed/eccbc048-20ff-4ae0-ade0-a7b2a640e520/Wp4FhoZnLE.json"></iframe>
-              <h1>벽돌 깨기</h1>
-              <div>마우스를 움직여 공으로 벽돌을 부수기!</div>
-            </a>
-          </article>
-          <article class="cursorEft" id="#">
-            <a href="./Javascripts/reactionRate/index.html">
-              <!-- <img src="./Javascripts/img/thunder.png" alt="반응속도 이미지"> -->
-              <iframe src="https://lottie.host/embed/a51aa19b-9c15-4e34-af5c-fcacc2c46d54/vfyKyPB0CV.json"></iframe>
-              <h1>반응 속도 테스트</h1>
-              <div>5번의 클릭으로 나의 반응속도를 알아보자!</div>
-            </a>
-          </article>
-          <article class="cursorEft" id="#">
-            <a href="./Javascripts/HTML/slot_machine.html">
-              <!-- <img src="./Javascripts/img/slot_machine.png" alt="슬롯머신 이미지"> -->
-              <!-- <iframe src="https://lottie.host/embed/4665f940-bca1-42fc-a2e9-68ff76b58f4a/DxRFgpstEN.json"></iframe> -->
-              <iframe src="https://lottie.host/embed/b08fc877-fb8b-47e4-8d79-7421964fab2f/bWWI4xMFTp.json"></iframe>
-              <h1>슬롯머신 게임</h1>
-              <div>같은 그림 3개를 만들어보자!</div>
-            </a>
-          </article>
-          <article class="cursorEft" id="#">
-            <a href="./Javascripts/HTML/Lotto.html">
-              <!-- <img src="./Javascripts/img/lotto.png" alt="로또 번호 생성기 이미지"> -->
-              <iframe src="https://lottie.host/embed/2b42510c-b93f-4e74-a464-a5e62255c1dd/LOTpQ1BbfB.json"></iframe>
-              <h1>로또 번호 생성기</h1>
-              <div>이번의 1등은 바로 나 ?!</div>
-            </a>
-          </article>
-          <article class="cursorEft" id="#">
-            <a href="./Javascripts/roulette/roulette.html">
-              <!-- <img src="./Javascripts/img/roulette.png" alt="룰렛 이미지"> -->
-              <iframe src="https://lottie.host/embed/b98f66f0-fe7a-439b-b6f0-33b2fc64e6f8/h25uZmMEVW.json"></iframe>
-              <h1>룰렛 돌리기</h1>
-              <div>최대 10개의 메뉴를 돌려보세요!</div>
-            </a>
-          </article>
-          <article class="cursorEft" id="#">
-            <a href="./Javascripts/snake/index.html">
-              <!-- <img src="./Javascripts/img/snake.png" alt="뱀 게임 이미지"> -->
-              <iframe src="https://lottie.host/embed/aa2dde0e-c93d-45e3-b860-e76215b2456e/jRKWdMhjo1.json"></iframe>
-              <h1>스네이크 게임</h1>
-              <div>벽에 부딛히면 끝나요! 최대한 많은 음식을 먹어보세요!</div>
-            </a>
-          </article>
-          <article class="cursorEft" id="#">
-            <a href="./Javascripts/cardGame/index.html">
-              <!-- <img src="./Javascripts/img/cardImg.png" alt="카드 게임 이미지"> -->
-              <iframe src="https://lottie.host/embed/78782018-f1a6-4be7-8ec6-b1b6e4c56979/hqH3AI8Le4.json"></iframe>
-              <h1>짝맞추기 게임</h1>
-              <div>60초 안에 최대한 많은 카드의 짝을 맞춰보세요!</div>
-            </a>
-          </article>
-          <article class="cursorEft" id="#">
-            <a href="./Javascripts/rps/index.html">
-              <!-- <img src="./Javascripts/img/cardImg.png" alt="카드 게임 이미지"> -->
-              <iframe src="https://lottie.host/embed/31580292-90b2-4f78-8e33-985d38a3ea09/cjXdEnroS5.json"></iframe>
-              <h1>가위바위보 게임</h1>
-              <div>컴퓨터랑 대결해보세요!!</div>
-            </a>
-          </article>
-        </main>
+      <div class="swiper-slide main-slide" id="mainPage">
+        <div class="swiper mySwiperInner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <article class="cursorEft" id="break-Block">
+                <a href="./Javascripts/HTML/breakBlock.html">
+                  <iframe src="https://lottie.host/embed/877d9458-4bd4-40b1-9d06-4f43cbb70c4f/vw1TIV9bod.json"></iframe>
+                  <h1>얼음 부수기</h1>
+                  <div>50개의 블럭을 빠르게 눌러 얼음 부수기!</div>
+                </a>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="cursorEft" id="">
+                <a href="./Javascripts/HTML/breakOut.html">
+                  <iframe src="https://lottie.host/embed/eccbc048-20ff-4ae0-ade0-a7b2a640e520/Wp4FhoZnLE.json"></iframe>
+                  <h1>벽돌 깨기</h1>
+                  <div>마우스를 움직여 공으로 벽돌을 부수기!</div>
+                </a>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="cursorEft" id="#">
+                <a href="./Javascripts/reactionRate/index.html">
+                  <iframe src="https://lottie.host/embed/a51aa19b-9c15-4e34-af5c-fcacc2c46d54/vfyKyPB0CV.json"></iframe>
+                  <h1>반응 속도 테스트</h1>
+                  <div>5번의 클릭으로 나의 반응속도를 알아보자!</div>
+                </a>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="cursorEft" id="#">
+                <a href="./Javascripts/HTML/slot_machine.html">
+                  <iframe src="https://lottie.host/embed/b08fc877-fb8b-47e4-8d79-7421964fab2f/bWWI4xMFTp.json"></iframe>
+                  <h1>슬롯머신 게임</h1>
+                  <div>같은 그림 3개를 만들어보자!</div>
+                </a>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="cursorEft" id="#">
+                <a href="./Javascripts/HTML/Lotto.html">
+                  <iframe src="https://lottie.host/embed/2b42510c-b93f-4e74-a464-a5e62255c1dd/LOTpQ1BbfB.json"></iframe>
+                  <h1>로또 번호 생성기</h1>
+                  <div>이번의 1등은 바로 나 ?!</div>
+                </a>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="cursorEft" id="#">
+                <a href="./Javascripts/roulette/roulette.html">
+                  <iframe src="https://lottie.host/embed/b98f66f0-fe7a-439b-b6f0-33b2fc64e6f8/h25uZmMEVW.json"></iframe>
+                  <h1>룰렛 돌리기</h1>
+                  <div>최대 10개의 메뉴를 돌려보세요!</div>
+                </a>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="cursorEft" id="#">
+                <a href="./Javascripts/snake/index.html">
+                  <iframe src="https://lottie.host/embed/aa2dde0e-c93d-45e3-b860-e76215b2456e/jRKWdMhjo1.json"></iframe>
+                  <h1>스네이크 게임</h1>
+                  <div>벽에 부딛히면 끝나요! 최대한 많은 음식을 먹어보세요!</div>
+                </a>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="cursorEft" id="#">
+                <a href="./Javascripts/cardGame/index.html">
+                  <iframe src="https://lottie.host/embed/78782018-f1a6-4be7-8ec6-b1b6e4c56979/hqH3AI8Le4.json"></iframe>
+                  <h1>짝맞추기 게임</h1>
+                  <div>60초 안에 최대한 많은 카드의 짝을 맞춰보세요!</div>
+                </a>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="cursorEft" id="#">
+                <a href="./Javascripts/rps/index.html">
+                  <iframe src="https://lottie.host/embed/31580292-90b2-4f78-8e33-985d38a3ea09/cjXdEnroS5.json"></iframe>
+                  <h1>가위바위보 게임</h1>
+                  <div>컴퓨터랑 대결해보세요!!</div>
+                </a>
+              </article>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
       </div>
     </div>
-    <div class="swiper-pagination"></div>
   </div>
 
   <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-  <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="gamebox.js"></script>
 </body>

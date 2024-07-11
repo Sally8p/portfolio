@@ -30,7 +30,6 @@ body {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  /* background: #006041; */
   background: #06283D;
   position: absolute;
   top: 0;
@@ -46,7 +45,7 @@ body {
   height: 100vh;
   width: 100vw;
   font-size: 20px;
-  /* color: #147361; */
+  background-color: #147361;
   color: #D9CEC1;
   position: absolute;
   top: 0;
@@ -77,12 +76,10 @@ body {
   }
 }
 
-/* .scrollBtn { */
 .scrtext {
   position: absolute;
   bottom: 8%;
   height: 50px;
-
 }
 
 /* Swiper */
@@ -91,125 +88,115 @@ body {
   height: 100%;
 }
 
-.swiper-slide {
+.intro-slide .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
-  color: #fff;
-  /* background: #D9CEC1; */
   background: #147361;
 }
 
-/* mainpage */
-#mainPage {
+.main-slide .swiper-slide {
+  height: calc((100% - 60px) / 3);
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  width: 100%;
-  min-height: 100vh;
-  letter-spacing: -0.04em;
-  background-color: #FFF;
-  background-color: #D9CEC1;
+  padding: 10px;
 }
 
-article {
-  margin: 10px;
-  padding: 20px;
-  background: #e0e0e0;
-  width: calc(30% - 50px);
-  height: 280px;
+.main-slide .swiper-slide article {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 24px;
-  gap: 1.25rem
-}
-
-.cursorEft {
-  position: relative;
-  bottom: 0;
+  background: #ffffff;
   padding: 20px;
-  max-width: 500px;
-  text-align: center;
   border-radius: 10px;
-  background-color: #fff;
-  color: #000;
   box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-  transition: bottom 250ms ease-in, box-shadow 250ms ease-in;
-}
-
-.cursorEft:hover {
-  bottom: 5px;
-  box-shadow: rgba(0, 0, 0, 1.15) 0px 5px 20px 0px;
-}
-
-.cursorEft:last-child {
-  margin-bottom: 0;
-}
-
-.swiper {
-  --swiper-theme-color: #006041;
-}
-
-.swiper1 {
+  transition: transform 250ms ease-in, box-shadow 250ms ease-in;
   width: 100%;
   height: 100%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.swiper-slide1 {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  height: calc((100% - 30px) / 2) !important;
+.main-slide .swiper-slide article:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 20px 0px;
+}
 
-  /* Center slide text vertically */
+.main-slide .swiper-slide article a {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.gamelist {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-a {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
+  text-align: center;
+  text-decoration: none;
   font-family: 'ONE-Mobile-POP';
   color: #000;
-  text-decoration-line: none;
+  gap: 10px;
 }
 
-a>img {
-  width: 80px;
-  height: 80px;
+.main-slide .swiper-slide article a iframe {
+  width: 150px;
+  height: 150px;
 }
 
-a>h1 {
-  font-size: 30px;
+.main-slide .swiper-slide article a h1 {
+  font-size: 24px;
 }
 
-a>div {
-  font-size: 15px;
+.main-slide .swiper-slide article a div {
+  font-size: 20px;
 }
 
-article{
-  width: 100vw;
+.swiper-button-next,
+.swiper-button-prev {
+  color: #147361;
 }
 
-.intro_container{
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
+@media (max-width: 1023px) {
+  .main-slide .swiper-slide article a iframe {
+      width: 300px;
+      height: 250px;
+    }
+  
+    .main-slide .swiper-slide article a h1 {
+      font-size: 32px;
+    }
+  
+    .main-slide .swiper-slide article a div {
+      font-size: 24px;
+    }
+}
+@media (max-width: 639px) {
+  .intro_title {
+    font-size: 30px;
+  }
+
+  .intro_title:after {
+    font-size: 30px;
+  }
+    .main-slide .swiper-slide article a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      text-decoration: none;
+      font-family: 'ONE-Mobile-POP';
+      color: #000;
+      gap: 20px
+    }
+  
+    .main-slide .swiper-slide article a iframe {
+      width: 300px;
+      height: 200px;
+    }
+  
+    .main-slide .swiper-slide article a h1 {
+      font-size: 28px;
+    }
+  
+    .main-slide .swiper-slide article a div {
+      font-size: 20px;
+    }
 }
