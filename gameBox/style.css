@@ -217,7 +217,7 @@ iframe {
 
   .main-slide {
     padding: 50px 15px 50px 15px;
-    
+
   }
 
   iframe {
@@ -225,11 +225,22 @@ iframe {
     width: 200px;
   }
 
-  .intro h1{
+  .intro h1 {
     font-size: 18px;
   }
 
   .scrtext {
-      bottom: 20%;
-    }
+    bottom: 20%;
+  }
+
+  .intro iframe,
+  .intro .intro_title {
+    position: relative;
+    top: -30px;
+  }
+
+  .intro .scrtext {
+    position: relative;
+    top: -30px;
+  }
 }
