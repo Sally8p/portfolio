@@ -22,6 +22,7 @@ body {
   background: #D9CEC1;
   position: relative;
   overflow: hidden;
+
 }
 
 .loadingPage {
@@ -78,7 +79,7 @@ body {
 
 .scrtext {
   position: absolute;
-  bottom: 8%;
+  bottom: 5%;
   height: 50px;
 }
 
@@ -93,6 +94,10 @@ body {
   justify-content: center;
   align-items: center;
   background: #147361;
+}
+
+.main-slide {
+  padding: 30px
 }
 
 .main-slide .swiper-slide {
@@ -145,58 +150,64 @@ body {
 }
 
 .main-slide .swiper-slide article a div {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
   color: #147361;
 }
-
+/* tab */
 @media (max-width: 1023px) {
   .main-slide .swiper-slide article a iframe {
-      width: 300px;
-      height: 250px;
-    }
-  
-    .main-slide .swiper-slide article a h1 {
-      font-size: 32px;
-    }
-  
-    .main-slide .swiper-slide article a div {
-      font-size: 24px;
-    }
+    width: 300px;
+    height: 250px;
+  }
+
+  .main-slide .swiper-slide article a h1 {
+    font-size: 32px;
+  }
+
+  .main-slide .swiper-slide article a div {
+    font-size: 24px;
+  }
 }
+/* mobile */
 @media (max-width: 639px) {
   .intro_title {
-    font-size: 30px;
+    font-size: 24px;
   }
 
   .intro_title:after {
     font-size: 30px;
   }
-    .main-slide .swiper-slide article a {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      text-decoration: none;
-      font-family: 'ONE-Mobile-POP';
-      color: #000;
-      gap: 20px
-    }
-  
-    .main-slide .swiper-slide article a iframe {
-      width: 300px;
-      height: 200px;
-    }
-  
-    .main-slide .swiper-slide article a h1 {
-      font-size: 28px;
-    }
-  
-    .main-slide .swiper-slide article a div {
-      font-size: 20px;
-    }
+
+  .main-slide .swiper-slide article a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'ONE-Mobile-POP';
+    color: #000;
+    gap: 20px
+  }
+
+  .main-slide .swiper-slide article a iframe {
+    width: 300px;
+    height: 200px;
+  }
+
+  .main-slide .swiper-slide article a h1 {
+    font-size: 24px;
+  }
+
+  .main-slide .swiper-slide article a div {
+    font-size: 18px;
+  }
+
+  .main-slide {
+    padding: 20px;
+  }
 }

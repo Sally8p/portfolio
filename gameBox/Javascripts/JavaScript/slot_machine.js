@@ -23,12 +23,12 @@ document.addEventListener("DOMContentLoaded", () => {
   async function spin() {
     for (const door of doors) {
       const boxes = door.querySelector(".boxes"); // 각 문 내부의 박스 요소
-      const duration = 0.7; // 트랜지션 지속 시간 설정
+      const duration = 1.2; // 트랜지션 지속 시간 설정
       const moveBy = door.clientHeight * items.length; // 이동할 거리 설정
       boxes.style.transitionDuration = `${duration}s`;
       boxes.style.transform = `translateY(-${moveBy}px)`; // 이동 설정
 
-      await delay(duration * 1000); // 트랜지션 지속 시간만큼 대기
+      await delay(duration * 500); // 트랜지션 지속 시간만큼 대기
 
       // 스핀 후 위치를 초기화하고 새로운 아이템으로 채우기
       boxes.style.transitionDuration = "0s";

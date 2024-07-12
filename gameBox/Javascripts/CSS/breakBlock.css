@@ -137,3 +137,10 @@ h1 {
   border-radius: 10px;
   font-family: 'ONE-Mobile-POP';
 }
+
+@media (max-width: 639px) {
+  #game-container {
+    margin-bottom: 15px;
+    grid-template-columns: repeat(5, 50px);
+  }
+}

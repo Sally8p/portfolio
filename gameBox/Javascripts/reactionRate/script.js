@@ -23,13 +23,15 @@ document.addEventListener("DOMContentLoaded", () => {
   // 모달의 다시하기 버튼 클릭 시 게임 재시작
   modalRestartButton.addEventListener("click", () => {
     resultModal.style.display = "none";
-    startTest();
+    startButton.style.display = "block"; // 시작 버튼 다시 보이기
+    statusDiv.textContent = ""; // 상태 텍스트 초기화
+    countDiv.textContent = ""; // 카운트 텍스트 초기화
+    frame.style.backgroundColor = "#333"; // 기본 배경색으로 초기화
   });
 
   // 게임 시작 함수
   function startTest() {
-    centerContent.style.display = "none"; // 중앙 컨텐츠 숨기기
-    frame.style.display = "flex"; // 게임 프레임 보이기
+    startButton.style.display = "none"; // 시작 버튼 숨기기
     frame.style.backgroundColor = "#DCD0FF"; // 연보라색 배경 설정
     statusDiv.textContent = "게임 시작!"; // 상태 텍스트 설정
     countDiv.textContent = ""; // 카운트 텍스트 초기화
@@ -49,7 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
       )} 초`; // 결과 모달에 평균 반응 시간 표시
       resultModal.style.display = "flex"; // 모달 표시
       frame.style.backgroundColor = "#0000FF"; // 파란색 배경 설정
-      statusDiv.textContent = ""; // 상태 텍스트 초기화
       return;
     }
 

@@ -49,7 +49,7 @@ h1 {
   align-items: center;
   padding: 10px;
   border-radius: 10px;
-  background-color:#ccc;
+  background-color: #ccc;
 }
 
 .game-container {
@@ -68,6 +68,10 @@ h1 {
 canvas {
   background: #232332;
   box-sizing: border-box;
+  width: 100%;
+  /* 캔버스의 너비를 부모 요소에 맞추기 */
+  height: 100%;
+  /* 캔버스의 높이를 부모 요소에 맞추기 */
 }
 
 .score {
@@ -190,4 +194,17 @@ button:active {
 
 .score-history div {
   margin-bottom: 5px;
+}
+
+@media (max-width: 680px) {
+  .game-container {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+  }
+
+  canvas {
+    width: 100%;
+    height: auto;
+  }
 }

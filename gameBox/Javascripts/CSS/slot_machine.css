@@ -63,7 +63,7 @@ body {
   height: 150px;
   overflow: hidden;
   border-radius: 10px;
-  margin: 20px; 
+  margin: 20px;
 }
 
 .boxes {
@@ -148,4 +148,11 @@ h1 {
   color: #fff;
   font-family: 'ONE-Mobile-POP';
   text-shadow: 2px 1px 3px #000;
+}
+
+@media (max-width: 639px) {
+  .machine {
+    width: 450px;
+    height: 300px;
+  }
 }

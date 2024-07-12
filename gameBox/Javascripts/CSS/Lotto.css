@@ -145,3 +145,30 @@ button {
   top: 10px;
   right: 10px;
 }
+
+@media (max-width: 639px) {
+  #lotto{
+    width: 450px;
+    height: 250px;
+    padding: 15px;
+  }
+  .number { 
+    width: 60px;
+    height: 60px;
+  }
+  .number span {
+    font-size: 30px;
+  }
+}
+@media (min-width:640px) and (max-width: 800px) {
+  #lotto{
+    width: 550px;
+  }
+  .number { 
+    width: 80px;
+    height: 80px;
+  }
+  .number span {
+    font-size: 40px;
+  }
+}

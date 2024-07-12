@@ -164,13 +164,13 @@ h1 {
 
 .card__front {
   transform: rotateY(-180deg);
-  background-size: 80% auto;
+  background-size: 100% auto;
 }
 
 .card__back {
   transform: rotateY(0deg);
   background-image: url('./img/cardBack.png');
-  background-size: 70% auto;
+  background-size: 100% auto;
 }
 
 .stage-clear {

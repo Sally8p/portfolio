@@ -117,3 +117,21 @@ button {
   font-family: 'ONE-Mobile-POP';
   text-shadow: 2px 1px 3px #000;
 }
+
+/* 추가: 게임 시간 스타일 */
+#game-time {
+  color: #fff;
+  font-size: 16px;
+  font-family: 'ONE-Mobile-POP';
+  text-shadow: 2px 1px 3px #000;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+@media (max-width: 639px) {
+  #game {
+    width: 430px;
+    height: auto;
+  }
+}

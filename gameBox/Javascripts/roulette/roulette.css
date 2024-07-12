@@ -196,3 +196,13 @@ button:active {
 .modal-text .highlight {
   font-size: 20px;
 }
+
+@media (max-width: 639px) {
+  .roulette-container{
+    width: 400px;
+  }
+  canvas {
+    width: 350px;
+    height: 350px;
+  }
+}
