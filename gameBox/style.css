@@ -177,6 +177,7 @@ iframe {
     font-size: 24px;
   }
 }
+
 /* mobile */
 @media only screen and (max-width: 375px) and (max-height: 812px) {
   .intro {
@@ -196,6 +197,7 @@ iframe {
   .main-slide {
     padding: 0;
     height: 100vh;
+    padding:80px 0;
   }
 
   .main-slide .swiper-slide {
@@ -226,13 +228,13 @@ iframe {
   }
 
   .main-slide .swiper-slide article a iframe {
-    width: 100px;
+    width: 80px;
     /* 아티클 내부 요소의 크기 조정 */
-    height: 100px;
+    height: 80px;
   }
 
   .main-slide .swiper-slide article a h1 {
-    font-size: 18px;
+    font-size: 16px;
     /* 아티클 내부 요소의 크기 조정 */
   }
 
