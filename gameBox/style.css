@@ -180,7 +180,8 @@ iframe {
 }
 
 /* mobile */
-@media (max-width: 639px) {
+/* @media (max-width: 639px) {
+
 
   .intro_title {
     font-size: 24px;
@@ -216,7 +217,7 @@ iframe {
   }
 
   .main-slide {
-    padding: 30px 15px 50px 15px;
+    padding: 20px 15px 70px 15px;
 
   }
 
@@ -242,5 +243,48 @@ iframe {
   .intro .scrtext {
     position: relative;
     top: -30px;
+  }
+} */
+
+@media only screen and (max-width: 375px) {
+
+  /* 아이폰 미니 14와 유사한 크기의 기기에서 적용할 스타일 */
+  .main-slide .swiper-slide article a iframe {
+    width: 150px;
+    height: 75px;
+  }
+
+  .main-slide .swiper-slide article a h1 {
+    font-size: 16px;
+  }
+
+  .main-slide .swiper-slide article a div {
+    font-size: 12px;
+  }
+
+  .main-slide {
+    padding: 10px 10px 50px 10px;
+  }
+
+  iframe {
+    height: 150px;
+    width: 150px;
+  }
+
+  .intro h1 {
+    font-size: 14px;
+  }
+
+  .scrtext {
+    bottom: 25%;
+  }
+
+  .intro iframe,
+  .intro .intro_title {
+    top: -20px;
+  }
+
+  .intro .scrtext {
+    top: -20px;
   }
 }
