@@ -251,7 +251,7 @@ iframe {
   }
 
   .scrtext {
-    bottom: 10%;
+    bottom: 30%;
   }
 
   .intro iframe,
@@ -262,6 +262,6 @@ iframe {
 
   .intro .scrtext {
     position: absolute;
-    bottom: 10%;
+    bottom: 25%;
   }
 }
