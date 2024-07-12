@@ -22,7 +22,6 @@ body {
   background: #D9CEC1;
   position: relative;
   overflow: hidden;
-
 }
 
 .loadingPage {
@@ -97,7 +96,7 @@ body {
 }
 
 .main-slide {
-  padding: 30px
+  padding: 30px;
 }
 
 .main-slide .swiper-slide {
@@ -180,7 +179,14 @@ iframe {
 }
 
 /* mobile */
-@media only screen and (max-width: 375px) {
+@media (max-width: 639px) {
+
+  .intro {
+    justify-content: flex-start;
+    /* 상단 정렬 */
+    padding-top: 20px;
+    /* 상단에 여백 추가 */
+  }
 
   .intro_title {
     font-size: 24px;
@@ -188,10 +194,6 @@ iframe {
 
   .intro_title:after {
     font-size: 30px;
-  }
-
-  .intro_title:after {
-    font-size: 28px;
   }
 
   .main-slide .swiper-slide article a {
@@ -203,12 +205,12 @@ iframe {
     text-decoration: none;
     font-family: 'ONE-Mobile-POP';
     color: #000;
-    gap: 20px
+    gap: 20px;
   }
 
   .main-slide .swiper-slide article a iframe {
-    width: 150px;
-    height: 75px;
+    width: 200px;
+    height: 100px;
   }
 
   .main-slide .swiper-slide article a h1 {
@@ -221,7 +223,6 @@ iframe {
 
   .main-slide {
     padding: 20px 15px 70px 15px;
-
   }
 
   iframe {
@@ -234,60 +235,19 @@ iframe {
   }
 
   .scrtext {
-    position: absolute;
-    bottom: 10%;
+    bottom: 20%;
   }
 
   .intro iframe,
   .intro .intro_title {
     position: relative;
-    top: -30px;
+    top: 20px;
+    /* 중앙에서 위로 이동 */
   }
 
   .intro .scrtext {
     position: relative;
-    top: -30px;
+    top: 30px;
+    /* 중앙에서 위로 이동 */
   }
 }
-
-/* @media only screen and (max-width: 375px) {
-
-  .main-slide .swiper-slide article a iframe {
-    width: 150px;
-    height: 75px;
-  }
-
-  .main-slide .swiper-slide article a h1 {
-    font-size: 16px;
-  }
-
-  .main-slide .swiper-slide article a div {
-    font-size: 12px;
-  }
-
-  .main-slide {
-    padding: 10px 10px 50px 10px;
-  }
-
-  iframe {
-    height: 150px;
-    width: 150px;
-  }
-
-  .intro h1 {
-    font-size: 14px;
-  }
-
-  .scrtext {
-    bottom: 25%;
-  }
-
-  .intro iframe,
-  .intro .intro_title {
-    top: -20px;
-  }
-
-  .intro .scrtext {
-    top: -20px;
-  }
-} */
