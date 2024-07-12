@@ -177,13 +177,12 @@ iframe {
     font-size: 24px;
   }
 }
-
 /* mobile */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 639px) {
   .intro {
     justify-content: flex-start;
     /* 상단 정렬 */
-    padding-top: 100px;
+    padding-top: 60px;
     /* 상단에 여백 추가 */
   }
 
@@ -207,9 +206,20 @@ iframe {
     gap: 20px;
   }
 
+  .main-slide .swiper-slide {
+    height: auto;
+    /* 슬라이드 높이 자동 조정 */
+  }
+
+  .main-slide .swiper-slide article {
+    height: auto;
+    /* 아티클 높이 자동 조정 */
+    padding: 10px;
+  }
+
   .main-slide .swiper-slide article a iframe {
-    width: 200px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
   }
 
   .main-slide .swiper-slide article a h1 {
@@ -221,7 +231,7 @@ iframe {
   }
 
   .main-slide {
-    padding: 20px 15px 70px 15px;
+    padding: 10px 15px 30px 15px;
   }
 
   iframe {
@@ -240,13 +250,13 @@ iframe {
   .intro iframe,
   .intro .intro_title {
     position: relative;
-    top: 120px;
+    top: 60px;
     /* 중앙에서 위로 이동 */
   }
 
   .intro .scrtext {
     position: relative;
-    top: 130px;
+    top: 70px;
     /* 중앙에서 위로 이동 */
   }
 }
