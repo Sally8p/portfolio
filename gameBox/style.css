@@ -179,12 +179,11 @@ iframe {
 }
 
 /* mobile */
-@media (max-width: 639px) {
-
+@media only screen and (max-width: 375px) {
   .intro {
     justify-content: flex-start;
     /* 상단 정렬 */
-    padding-top: 20px;
+    padding-top: 100px;
     /* 상단에 여백 추가 */
   }
 
