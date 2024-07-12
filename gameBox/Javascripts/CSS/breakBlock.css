@@ -139,6 +139,9 @@ h1 {
 }
 
 @media only screen and (min-width: 350px) and (max-height: 812px){
+  body{
+    height: 100vh;
+  }
   #game-container {
     margin-bottom: 15px;
     grid-template-columns: repeat(10, 22px);
