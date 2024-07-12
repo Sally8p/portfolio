@@ -157,6 +157,12 @@ body {
 .swiper-button-prev {
   color: #147361;
 }
+
+iframe {
+  height: 400px;
+  width: 400px;
+}
+
 /* tab */
 @media (max-width: 1023px) {
   .main-slide .swiper-slide article a iframe {
@@ -172,6 +178,7 @@ body {
     font-size: 24px;
   }
 }
+
 /* mobile */
 @media (max-width: 639px) {
 
@@ -209,6 +216,20 @@ body {
   }
 
   .main-slide {
-    padding: 20px;
+    padding: 40px 15px 40px 15px;
+    
+  }
+
+  iframe {
+    height: 200px;
+    width: 200px;
+  }
+
+  .intro h1{
+    font-size: 18px;
+  }
+
+  .srctext {
+    font-size: 10px;
   }
 }
