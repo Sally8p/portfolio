@@ -66,6 +66,7 @@ button {
   font-size: 16px;
   cursor: pointer;
   background-color: #febf00;
+  color: #000;
   font-family: 'ONE-Mobile-POP';
   border: none;
 }
@@ -133,6 +134,7 @@ h1 {
   font-size: 16px;
   cursor: pointer;
   background-color: #febf00;
+  color: #000;
   border: none;
   border-radius: 10px;
   font-family: 'ONE-Mobile-POP';
