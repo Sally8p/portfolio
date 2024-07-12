@@ -180,10 +180,11 @@ iframe {
 /* mobile */
 @media only screen and (max-width: 639px) {
   .intro {
-    justify-content: flex-start;
+    justify-content: center;
     /* 상단 정렬 */
-    padding-top: 60px;
-    /* 상단에 여백 추가 */
+    padding-top: 0;
+    /* 상단에 여백 추가 제거 */
+    height: 100vh;
   }
 
   .intro_title {
@@ -192,6 +193,26 @@ iframe {
 
   .intro_title:after {
     font-size: 30px;
+  }
+
+  .main-slide {
+    padding: 0;
+    height: 100vh;
+  }
+
+  .main-slide .swiper-slide {
+    height: 100vh;
+    /* 슬라이드 높이를 100vh로 설정 */
+  }
+
+  .main-slide .swiper-slide article {
+    height: 100%;
+    /* 아티클 높이를 100%로 설정 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
   }
 
   .main-slide .swiper-slide article a {
@@ -203,18 +224,7 @@ iframe {
     text-decoration: none;
     font-family: 'ONE-Mobile-POP';
     color: #000;
-    gap: 20px;
-  }
-
-  .main-slide .swiper-slide {
-    height: auto;
-    /* 슬라이드 높이 자동 조정 */
-  }
-
-  .main-slide .swiper-slide article {
-    height: auto;
-    /* 아티클 높이 자동 조정 */
-    padding: 10px;
+    gap: 10px;
   }
 
   .main-slide .swiper-slide article a iframe {
@@ -230,13 +240,9 @@ iframe {
     font-size: 13px;
   }
 
-  .main-slide {
-    padding: 10px 15px 30px 15px;
-  }
-
   iframe {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
   }
 
   .intro h1 {
@@ -244,19 +250,19 @@ iframe {
   }
 
   .scrtext {
-    bottom: 20%;
+    bottom: 10%;
   }
 
   .intro iframe,
   .intro .intro_title {
     position: relative;
-    top: 60px;
-    /* 중앙에서 위로 이동 */
+    top: 0;
+    /* 중앙에서 위로 이동 제거 */
   }
 
   .intro .scrtext {
-    position: relative;
-    top: 70px;
-    /* 중앙에서 위로 이동 */
+    position: absolute;
+    bottom: 10%;
+    /* 중앙에서 위로 이동 제거 */
   }
 }
