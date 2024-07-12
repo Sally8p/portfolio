@@ -241,13 +241,13 @@ iframe {
   .intro iframe,
   .intro .intro_title {
     position: relative;
-    top: 20px;
+    top: 120px;
     /* 중앙에서 위로 이동 */
   }
 
   .intro .scrtext {
     position: relative;
-    top: 30px;
+    top: 130px;
     /* 중앙에서 위로 이동 */
   }
 }
