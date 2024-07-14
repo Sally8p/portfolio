@@ -290,4 +290,7 @@ button:active {
   #startScreen{
     height: 313px;
   }
+  #home-button, #startButton, #restartButton, #showResultsButton{
+    color: #000;
+  }
 }

@@ -6,6 +6,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 * {
   font-family: 'ONE-Mobile-POP';
   box-sizing: border-box;
@@ -277,4 +278,40 @@ h1 {
   font-size: 16px;
   cursor: pointer;
   font-family: 'ONE-Mobile-POP';
+}
+
+@media only screen and (min-width: 350px) and (max-height: 900px) {
+  body {
+    height: 100vh;
   }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2,
+  p {
+    font-size: 13px;
+  }
+
+  #home-button {
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #000;
+  }
+  .menu__nav-stage{
+    padding-right: 60px;
+  }
+  .menu__nav-time::before{
+    padding-right: 30px;
+  }
+  .menu__nav-time{
+    align-items: center;
+  }
+  .modal__content{
+    padding: 20px;
+  }
+  .modal__content-close-button {
+    color: #000;
+  }
+}
