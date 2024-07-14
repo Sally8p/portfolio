@@ -29,6 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
     frame.style.backgroundColor = "#333"; // 기본 배경색으로 초기화
   });
 
+  statusDiv.style.fontFamily = "ONE-Mobile-POP";
+  countDiv.style.fontFamily = "ONE-Mobile-POP";
+
   // 게임 시작 함수
   function startTest() {
     startButton.style.display = "none"; // 시작 버튼 숨기기

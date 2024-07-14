@@ -1,11 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // 홈 버튼 클릭 시 메인 페이지로 이동
   const homeButton = document.querySelector("#home-button");
   homeButton.addEventListener("click", () => {
     window.location.href = "../../index.html#mainPage";
   });
 
-  // 게임 시작 버튼 및 다시 시작 버튼, 모달 창, 게임 지침 요소 가져오기
   const startButton = document.getElementById("start-button");
   const restartButton = document.getElementById("restart-button");
   const gameOverModal = document.getElementById("game-over-modal");
@@ -16,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
   gameTime.id = "game-time";
   document.body.appendChild(gameTime);
 
-  // 캔버스와 2D 컨텍스트 가져오기
   const canvas = document.getElementById("game");
   const ctx = canvas.getContext("2d");
 
@@ -25,11 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const canvasWidth = isSmallScreen ? 350 : 650;
   const canvasHeight = isSmallScreen ? 250 : 450;
 
-  // 캔버스 크기 설정
   canvas.width = canvasWidth;
   canvas.height = canvasHeight;
 
-  // 요소의 비율 계산
   const scale = canvasWidth / 650; // 원래 캔버스 크기에 대한 비율
   const ballRadius = 9 * scale;
   const paddleHeight = 12 * scale;
@@ -137,7 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 점수 추적 함수
   function trackScore() {
-    ctx.font = "bold 16px ONE-Mobile-POP";
+    ctx.font = "bold 14px ONE-Mobile-POP";
     ctx.fillStyle = "#333";
     ctx.fillText("Score: " + score, 8, 24);
     ctx.fillText("시간: " + timeElapsed + "초", canvas.width - 80, 24);
@@ -241,7 +236,8 @@ document.addEventListener("DOMContentLoaded", () => {
   startButton.addEventListener("click", startGame);
   restartButton.addEventListener("click", restartGame);
 
-  // 초기 상태에서 캔버스와 게임 지침 숨기기
+  // 초기 상태에서 캔버스, 게임 지침, 모달 창 숨기기
   canvas.style.display = "none";
   gameInstructions.style.display = "none";
+  gameOverModal.style.display = "none"; // 모달 창 숨기기
 });
