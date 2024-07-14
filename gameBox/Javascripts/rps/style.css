@@ -313,4 +313,7 @@ button {
     font-size: 14px;
     padding: 5px 10px;
   }
+  #history > div {
+    font-size: 15px;
+  }
 }
