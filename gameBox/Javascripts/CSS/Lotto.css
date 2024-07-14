@@ -146,29 +146,66 @@ button {
   right: 10px;
 }
 
-@media (max-width: 639px) {
-  #lotto{
+@media only screen and (min-width: 350px) and (max-height: 900px) {
+  body {
+    height: 100vh;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2,
+  p {
+    font-size: 15px;
+  }
+
+  #lotto {
     width: 450px;
     height: 250px;
     padding: 15px;
   }
-  .number { 
+
+  .number {
     width: 60px;
     height: 60px;
   }
+
   .number span {
     font-size: 30px;
   }
-}
-@media (min-width:640px) and (max-width: 800px) {
-  #lotto{
-    width: 550px;
+
+  button {
+    font-size: 16px;
+    padding: 8px 16px;
   }
-  .number { 
-    width: 80px;
-    height: 80px;
+
+  #home-button {
+    font-size: 14px;
+    padding: 5px 10px;
   }
-  .number span {
-    font-size: 40px;
+
+  #lotto-container {
+    gap: 20px;
+  }
+
+  #screen {
+    padding: 10px;
+  }
+
+  #generate-button {
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 5px
+  }
+
+  #lotto {
+    width: 90%;
+    height: 200px;
+  }
+
+  .number {
+    width: 48px;
+    height: 48px;
   }
 }
