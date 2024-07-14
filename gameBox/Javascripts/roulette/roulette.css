@@ -200,7 +200,7 @@ button:active {
 
 @media only screen and (min-width: 350px) and (max-height: 900px) {
   .roulette-container {
-    width: 90%;
+    width: 100%;
     max-width: 350px;
   }
 
@@ -247,6 +247,9 @@ button:active {
   }
   .menu-item{
     font-size: 12px;
+  }
+  #home-button, #addBtn, #rotateBtn{
+    color: #000;
   }
   
 }
