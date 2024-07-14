@@ -69,9 +69,7 @@ canvas {
   background: #232332;
   box-sizing: border-box;
   width: 100%;
-  /* 캔버스의 너비를 부모 요소에 맞추기 */
   height: 100%;
-  /* 캔버스의 높이를 부모 요소에 맞추기 */
 }
 
 .score {
@@ -84,7 +82,7 @@ canvas {
 
 .controls {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -196,15 +194,100 @@ button:active {
   margin-bottom: 5px;
 }
 
-@media (max-width: 680px) {
+/* 모바일 뷰포트에 맞춘 스타일 */
+@media only screen and (min-width: 350px) and (max-height: 900px) {
+  body {
+    height: 100vh;
+  }
+
+  .main-container {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  h2,
+  p {
+    font-size: 13px;
+  }
+
+  #game-instructions {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+
+  .game-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    height: 320px;
+  }
+
   .game-container {
     width: 100%;
     height: auto;
     max-width: 450px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   }
 
   canvas {
     width: 100%;
     height: auto;
+  }
+
+  .score {
+    font-size: 1.2rem;
+  }
+
+  .controls {
+    flex-direction: row;
+    /* 모바일에서 가로 정렬 */
+    justify-content: center;
+    gap: 10px;
+    /* 버튼 간격 조정 */
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  #home-button {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  .modal-content {
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 90%;
+    max-width: 300px;
+  }
+
+  #close-modal-button,
+  #close-score-modal-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  #restartButton,
+  #showResultsButton {
+    width: 100px;
+    font-size: 14px;
+  }
+  #startScreen{
+    height: 313px;
   }
 }

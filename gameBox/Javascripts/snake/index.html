@@ -19,17 +19,17 @@
         <hr>이동: 방향키 ←↑→↓
       </p>
     </div>
-    <div class="game-content">
+    <div class="game-content" id="gameContent">
       <div class="game-container">
         <div id="startScreen">
-          <button id="startButton" onclick="startGame()">게임 시작</button>
+          <button id="startButton">게임 시작</button>
         </div>
         <div id="gameScreen" style="display: none;">
           <div class="score">Score: <span id="score">0</span></div>
           <canvas id="gameCanvas"></canvas>
           <div class="controls" id="gameControls" style="display: none;">
-            <button id="restartButton" onclick="resetGame()">다시 시작</button>
-            <button id="showResultsButton" onclick="showResults()">결과보기</button>
+            <button id="restartButton">다시 시작</button>
+            <button id="showResultsButton">결과보기</button>
           </div>
         </div>
       </div>
