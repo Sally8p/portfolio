@@ -248,7 +248,7 @@ button:active {
   .menu-item{
     font-size: 12px;
   }
-  #home-button, #addBtn, #rotateBtn{
+  #home-button, #addBtn, #rotateBtn, #close-modal-button{
     color: #000;
   }
   
