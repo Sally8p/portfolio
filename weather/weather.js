@@ -45,37 +45,68 @@ document.addEventListener("DOMContentLoaded", () => {
         switch (json.weather[0].main) {
           case "Clear":
             iframe.src =
-              "https://lottie.host/embed/93264c63-2f94-499d-802d-2272a9f6a32d/trG00gxeOo.json";
+              "/lottie_clear.json";
               description.textContent = '맑음';
             break;
           case "Rain":
             iframe.src =
-              "https://lottie.host/embed/9ec7bbb7-a95e-47bd-b6a0-81d67a6f1127/IUDprNQ4Eh.json";
+              "/lottie_rain.json";
               description.textContent = '비';
             break;
           case "Snow":
-            iframe.src =
-              "https://lottie.host/embed/cf580154-2b57-4a12-88b9-332bea8356ed/5ANGutl2lr.json";
+            iframe.src = "/lottie_snow.json";
               description.textContent = '눈';
             break;
           case "Clouds":
-            iframe.src =
-              "https://lottie.host/embed/9f02a567-fd23-4b3c-9e6c-b1b34d8dc317/JMjifTSZvN.json";
+            iframe.src = "lottie_clouds.json";
               description.textContent = '흐림';
             break;
           case "Haze":
-            iframe.src =
-              "https://lottie.host/embed/08d3294a-df23-4964-9d70-491df00fb25f/e4DIx6PoCC.json";
+            iframe.src = "lottie_haze.json"
               description.textContent = '연무';
             break;
           case "Mist":
             iframe.src =
-              "https://lottie.host/embed/2475a98a-42ce-49ae-8abb-a24b599eb9e6/nZTmfKv5b2.json";
+              "lottie_clear.json";
             description.textContent = '안개';
             break;
           default:
             iframe.src = "";
         }
+        // switch (json.weather[0].main) {
+        //   case "Clear":
+        //     iframe.src =
+        //       "https://lottie.host/embed/93264c63-2f94-499d-802d-2272a9f6a32d/trG00gxeOo.json";
+        //       description.textContent = '맑음';
+        //     break;
+        //   case "Rain":
+        //     iframe.src =
+        //       "https://lottie.host/embed/9ec7bbb7-a95e-47bd-b6a0-81d67a6f1127/IUDprNQ4Eh.json";
+        //       description.textContent = '비';
+        //     break;
+        //   case "Snow":
+        //     iframe.src =
+        //       "https://lottie.host/embed/cf580154-2b57-4a12-88b9-332bea8356ed/5ANGutl2lr.json";
+        //       description.textContent = '눈';
+        //     break;
+        //   case "Clouds":
+        //     iframe.src =
+        //       "https://lottie.host/embed/9f02a567-fd23-4b3c-9e6c-b1b34d8dc317/JMjifTSZvN.json";
+        //       description.textContent = '흐림';
+        //     break;
+        //   case "Haze":
+        //     iframe.src =
+        //       "https://lottie.host/embed/08d3294a-df23-4964-9d70-491df00fb25f/e4DIx6PoCC.json";
+        //       description.textContent = '연무';
+        //     break;
+        //   case "Mist":
+        //     iframe.src =
+        //       "https://lottie.host/embed/2475a98a-42ce-49ae-8abb-a24b599eb9e6/nZTmfKv5b2.json";
+        //     description.textContent = '안개';
+        //     break;
+        //   default:
+        //     iframe.src = "";
+        // }
 
         weatherAnimation.appendChild(iframe);
 
