@@ -117,6 +117,7 @@ button {
   color: #fff;
   font-family: 'ONE-Mobile-POP';
   text-shadow: 2px 1px 3px #000;
+  padding-bottom: 20px;
 }
 
 #game-time {
